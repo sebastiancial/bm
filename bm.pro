@@ -13,15 +13,15 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    querywindow.cpp \
-    jschart.cpp
+        querywindow.cpp \
+        jschart.cpp
 
 HEADERS  += mainwindow.h \
-    querywindow.h \
-    jschart.h
+            querywindow.h \
+            jschart.h
 
 FORMS    += mainwindow.ui \
-    querywindow.ui \
-    jschart.ui
+            querywindow.ui \
+            jschart.ui
 
 DISTFILES +=

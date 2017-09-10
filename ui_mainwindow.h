@@ -45,7 +45,7 @@ public:
         pushButton->setEnabled(true);
         pushButton->setGeometry(QRect(20, 480, 240, 75));
         QFont font;
-        font.setPointSize(14);
+        font.setPointSize(12);
         font.setBold(false);
         font.setWeight(50);
         pushButton->setFont(font);
@@ -55,15 +55,11 @@ public:
         pushButton_2 = new QPushButton(centralWidget);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
         pushButton_2->setGeometry(QRect(540, 480, 240, 75));
-        QFont font1;
-        font1.setPointSize(12);
-        font1.setBold(false);
-        font1.setWeight(50);
-        pushButton_2->setFont(font1);
+        pushButton_2->setFont(font);
         pushButton_3 = new QPushButton(centralWidget);
         pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
         pushButton_3->setGeometry(QRect(540, 390, 240, 75));
-        pushButton_3->setFont(font1);
+        pushButton_3->setFont(font);
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));

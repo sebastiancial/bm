@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.4.0, 2017-09-10T12:09:52. -->
+<!-- Written by QtCreator 4.4.0, 2017-09-10T19:36:26. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -168,6 +168,7 @@
     <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
     <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges">
      <value type="QString">QT_AUTO_SCREEN_SCALE_FACTOR=1</value>
+     <value type="QString">PATH=C:\Qt\5.7\mingw53_32\bin;C:\Qt\Tools\mingw530_32\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Users\sebas\AppData\Local\Microsoft\WindowsApps;c:\Program Files\MySQL\MySQL Server 5.7\lib\;</value>
     </valuelist>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Release</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>

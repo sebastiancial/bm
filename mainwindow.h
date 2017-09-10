@@ -6,6 +6,7 @@
 #include <QSqlQuery>
 #include <QSqlDatabase>
 #include <QSqlRecord>
+#include <QtSql>
 
 //global variables
 extern QSqlQuery queryshare;

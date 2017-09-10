@@ -218,6 +218,144 @@ release/moc_mainwindow.cpp: ../../5.7/mingw53_32/include/QtWidgets/QMainWindow \
 		../../5.7/mingw53_32/include/QtSql/QSqlDatabase \
 		../../5.7/mingw53_32/include/QtSql/QSqlRecord \
 		../../5.7/mingw53_32/include/QtSql/qsqlrecord.h \
+		../../5.7/mingw53_32/include/QtSql/QtSql \
+		../../5.7/mingw53_32/include/QtSql/QtSqlDepends \
+		../../5.7/mingw53_32/include/QtCore/QtCore \
+		../../5.7/mingw53_32/include/QtCore/QtCoreDepends \
+		../../5.7/mingw53_32/include/QtCore/qabstractanimation.h \
+		../../5.7/mingw53_32/include/QtCore/qanimationgroup.h \
+		../../5.7/mingw53_32/include/QtCore/qparallelanimationgroup.h \
+		../../5.7/mingw53_32/include/QtCore/qpauseanimation.h \
+		../../5.7/mingw53_32/include/QtCore/qpropertyanimation.h \
+		../../5.7/mingw53_32/include/QtCore/qvariantanimation.h \
+		../../5.7/mingw53_32/include/QtCore/qeasingcurve.h \
+		../../5.7/mingw53_32/include/QtCore/qsequentialanimationgroup.h \
+		../../5.7/mingw53_32/include/QtCore/qtextcodec.h \
+		../../5.7/mingw53_32/include/QtCore/qendian.h \
+		../../5.7/mingw53_32/include/QtCore/qlibraryinfo.h \
+		../../5.7/mingw53_32/include/QtCore/qdatetime.h \
+		../../5.7/mingw53_32/include/QtCore/qbuffer.h \
+		../../5.7/mingw53_32/include/QtCore/qdir.h \
+		../../5.7/mingw53_32/include/QtCore/qfileinfo.h \
+		../../5.7/mingw53_32/include/QtCore/qdiriterator.h \
+		../../5.7/mingw53_32/include/QtCore/qfileselector.h \
+		../../5.7/mingw53_32/include/QtCore/QObject \
+		../../5.7/mingw53_32/include/QtCore/QStringList \
+		../../5.7/mingw53_32/include/QtCore/qfilesystemwatcher.h \
+		../../5.7/mingw53_32/include/QtCore/qlockfile.h \
+		../../5.7/mingw53_32/include/QtCore/qloggingcategory.h \
+		../../5.7/mingw53_32/include/QtCore/qprocess.h \
+		../../5.7/mingw53_32/include/QtCore/qresource.h \
+		../../5.7/mingw53_32/include/QtCore/qsavefile.h \
+		../../5.7/mingw53_32/include/QtCore/qsettings.h \
+		../../5.7/mingw53_32/include/QtCore/qstandardpaths.h \
+		../../5.7/mingw53_32/include/QtCore/qstorageinfo.h \
+		../../5.7/mingw53_32/include/QtCore/qtemporarydir.h \
+		../../5.7/mingw53_32/include/QtCore/QScopedPointer \
+		../../5.7/mingw53_32/include/QtCore/qtemporaryfile.h \
+		../../5.7/mingw53_32/include/QtCore/qabstractitemmodel.h \
+		../../5.7/mingw53_32/include/QtCore/qabstractproxymodel.h \
+		../../5.7/mingw53_32/include/QtCore/qidentityproxymodel.h \
+		../../5.7/mingw53_32/include/QtCore/qitemselectionmodel.h \
+		../../5.7/mingw53_32/include/QtCore/qsortfilterproxymodel.h \
+		../../5.7/mingw53_32/include/QtCore/qstringlistmodel.h \
+		../../5.7/mingw53_32/include/QtCore/qjsonarray.h \
+		../../5.7/mingw53_32/include/QtCore/qjsonvalue.h \
+		../../5.7/mingw53_32/include/QtCore/qjsondocument.h \
+		../../5.7/mingw53_32/include/QtCore/qjsonobject.h \
+		../../5.7/mingw53_32/include/QtCore/qabstracteventdispatcher.h \
+		../../5.7/mingw53_32/include/QtCore/qeventloop.h \
+		../../5.7/mingw53_32/include/QtCore/qabstractnativeeventfilter.h \
+		../../5.7/mingw53_32/include/QtCore/qbasictimer.h \
+		../../5.7/mingw53_32/include/QtCore/qcoreapplication.h \
+		../../5.7/mingw53_32/include/QtCore/qmath.h \
+		../../5.7/mingw53_32/include/QtCore/qmetaobject.h \
+		../../5.7/mingw53_32/include/QtCore/qmimedata.h \
+		../../5.7/mingw53_32/include/QtCore/qobjectcleanuphandler.h \
+		../../5.7/mingw53_32/include/QtCore/qpointer.h \
+		../../5.7/mingw53_32/include/QtCore/qsharedmemory.h \
+		../../5.7/mingw53_32/include/QtCore/qsignalmapper.h \
+		../../5.7/mingw53_32/include/QtCore/qsocketnotifier.h \
+		../../5.7/mingw53_32/include/QtCore/qsystemsemaphore.h \
+		../../5.7/mingw53_32/include/QtCore/qtimer.h \
+		../../5.7/mingw53_32/include/QtCore/qtranslator.h \
+		../../5.7/mingw53_32/include/QtCore/qwineventnotifier.h \
+		../../5.7/mingw53_32/include/QtCore/qmimedatabase.h \
+		../../5.7/mingw53_32/include/QtCore/qmimetype.h \
+		../../5.7/mingw53_32/include/QtCore/qfactoryinterface.h \
+		../../5.7/mingw53_32/include/QtCore/qlibrary.h \
+		../../5.7/mingw53_32/include/QtCore/qplugin.h \
+		../../5.7/mingw53_32/include/QtCore/qpluginloader.h \
+		../../5.7/mingw53_32/include/QtCore/quuid.h \
+		../../5.7/mingw53_32/include/QtCore/qabstractstate.h \
+		../../5.7/mingw53_32/include/QtCore/qabstracttransition.h \
+		../../5.7/mingw53_32/include/QtCore/qeventtransition.h \
+		../../5.7/mingw53_32/include/QtCore/qfinalstate.h \
+		../../5.7/mingw53_32/include/QtCore/qhistorystate.h \
+		../../5.7/mingw53_32/include/QtCore/qsignaltransition.h \
+		../../5.7/mingw53_32/include/QtCore/qstate.h \
+		../../5.7/mingw53_32/include/QtCore/qstatemachine.h \
+		../../5.7/mingw53_32/include/QtCore/qexception.h \
+		../../5.7/mingw53_32/include/QtCore/qfuture.h \
+		../../5.7/mingw53_32/include/QtCore/qfutureinterface.h \
+		../../5.7/mingw53_32/include/QtCore/qrunnable.h \
+		../../5.7/mingw53_32/include/QtCore/qresultstore.h \
+		../../5.7/mingw53_32/include/QtCore/qfuturesynchronizer.h \
+		../../5.7/mingw53_32/include/QtCore/qfuturewatcher.h \
+		../../5.7/mingw53_32/include/QtCore/qreadwritelock.h \
+		../../5.7/mingw53_32/include/QtCore/qsemaphore.h \
+		../../5.7/mingw53_32/include/QtCore/qthread.h \
+		../../5.7/mingw53_32/include/QtCore/qthreadpool.h \
+		../../5.7/mingw53_32/include/QtCore/qthreadstorage.h \
+		../../5.7/mingw53_32/include/QtCore/qwaitcondition.h \
+		../../5.7/mingw53_32/include/QtCore/qarraydataops.h \
+		../../5.7/mingw53_32/include/QtCore/qarraydatapointer.h \
+		../../5.7/mingw53_32/include/QtCore/qbitarray.h \
+		../../5.7/mingw53_32/include/QtCore/qbytearraymatcher.h \
+		../../5.7/mingw53_32/include/QtCore/qcache.h \
+		../../5.7/mingw53_32/include/QtCore/qcollator.h \
+		../../5.7/mingw53_32/include/QtCore/qcommandlineoption.h \
+		../../5.7/mingw53_32/include/QtCore/qcommandlineparser.h \
+		../../5.7/mingw53_32/include/QtCore/qcryptographichash.h \
+		../../5.7/mingw53_32/include/QtCore/qelapsedtimer.h \
+		../../5.7/mingw53_32/include/QtCore/qlinkedlist.h \
+		../../5.7/mingw53_32/include/QtCore/qmessageauthenticationcode.h \
+		../../5.7/mingw53_32/include/QtCore/qqueue.h \
+		../../5.7/mingw53_32/include/QtCore/qregularexpression.h \
+		../../5.7/mingw53_32/include/QtCore/qscopedvaluerollback.h \
+		../../5.7/mingw53_32/include/QtCore/qstack.h \
+		../../5.7/mingw53_32/include/QtCore/qtextboundaryfinder.h \
+		../../5.7/mingw53_32/include/QtCore/qtimeline.h \
+		../../5.7/mingw53_32/include/QtCore/qtimezone.h \
+		../../5.7/mingw53_32/include/QtCore/qversionnumber.h \
+		../../5.7/mingw53_32/include/QtCore/qxmlstream.h \
+		../../5.7/mingw53_32/include/QtCore/qtcoreversion.h \
+		../../5.7/mingw53_32/include/QtSql/qsqldriver.h \
+		../../5.7/mingw53_32/include/QtSql/qsqldriverplugin.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlerror.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlfield.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlindex.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlresult.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlquerymodel.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlrelationaldelegate.h \
+		../../5.7/mingw53_32/include/QtWidgets/qitemdelegate.h \
+		../../5.7/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../5.7/mingw53_32/include/QtWidgets/qstyleoption.h \
+		../../5.7/mingw53_32/include/QtWidgets/qabstractspinbox.h \
+		../../5.7/mingw53_32/include/QtGui/qvalidator.h \
+		../../5.7/mingw53_32/include/QtWidgets/qslider.h \
+		../../5.7/mingw53_32/include/QtWidgets/qabstractslider.h \
+		../../5.7/mingw53_32/include/QtWidgets/qstyle.h \
+		../../5.7/mingw53_32/include/QtWidgets/qtabbar.h \
+		../../5.7/mingw53_32/include/QtWidgets/qrubberband.h \
+		../../5.7/mingw53_32/include/QtWidgets/qframe.h \
+		../../5.7/mingw53_32/include/QtWidgets/qlistview.h \
+		../../5.7/mingw53_32/include/QtWidgets/qabstractitemview.h \
+		../../5.7/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
+		../../5.7/mingw53_32/include/QtWidgets/qcombobox.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlrelationaltablemodel.h \
+		../../5.7/mingw53_32/include/QtSql/qsqltablemodel.h \
+		../../5.7/mingw53_32/include/QtSql/qtsqlversion.h \
 		mainwindow.h \
 		../../5.7/mingw53_32/bin/moc.exe
 	C:\Qt\5.7\mingw53_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/5.7/mingw53_32/mkspecs/win32-g++ -IC:/Qt/workspace/bm -IC:/Qt/5.7/mingw53_32/include -IC:/Qt/5.7/mingw53_32/include/QtCharts -IC:/Qt/5.7/mingw53_32/include/QtWidgets -IC:/Qt/5.7/mingw53_32/include/QtGui -IC:/Qt/5.7/mingw53_32/include/QtANGLE -IC:/Qt/5.7/mingw53_32/include/QtSql -IC:/Qt/5.7/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward mainwindow.h -o release\moc_mainwindow.cpp
@@ -1015,10 +1153,146 @@ release/main.o: main.cpp mainwindow.h \
 		../../5.7/mingw53_32/include/QtSql/QSqlDatabase \
 		../../5.7/mingw53_32/include/QtSql/QSqlRecord \
 		../../5.7/mingw53_32/include/QtSql/qsqlrecord.h \
+		../../5.7/mingw53_32/include/QtSql/QtSql \
+		../../5.7/mingw53_32/include/QtSql/QtSqlDepends \
+		../../5.7/mingw53_32/include/QtCore/QtCore \
+		../../5.7/mingw53_32/include/QtCore/QtCoreDepends \
+		../../5.7/mingw53_32/include/QtCore/qabstractanimation.h \
+		../../5.7/mingw53_32/include/QtCore/qanimationgroup.h \
+		../../5.7/mingw53_32/include/QtCore/qparallelanimationgroup.h \
+		../../5.7/mingw53_32/include/QtCore/qpauseanimation.h \
+		../../5.7/mingw53_32/include/QtCore/qpropertyanimation.h \
+		../../5.7/mingw53_32/include/QtCore/qvariantanimation.h \
+		../../5.7/mingw53_32/include/QtCore/qeasingcurve.h \
+		../../5.7/mingw53_32/include/QtCore/qsequentialanimationgroup.h \
+		../../5.7/mingw53_32/include/QtCore/qtextcodec.h \
+		../../5.7/mingw53_32/include/QtCore/qendian.h \
+		../../5.7/mingw53_32/include/QtCore/qlibraryinfo.h \
+		../../5.7/mingw53_32/include/QtCore/qdatetime.h \
+		../../5.7/mingw53_32/include/QtCore/qbuffer.h \
+		../../5.7/mingw53_32/include/QtCore/qdir.h \
+		../../5.7/mingw53_32/include/QtCore/qfileinfo.h \
+		../../5.7/mingw53_32/include/QtCore/qdiriterator.h \
+		../../5.7/mingw53_32/include/QtCore/qfileselector.h \
+		../../5.7/mingw53_32/include/QtCore/QObject \
+		../../5.7/mingw53_32/include/QtCore/QStringList \
+		../../5.7/mingw53_32/include/QtCore/qfilesystemwatcher.h \
+		../../5.7/mingw53_32/include/QtCore/qlockfile.h \
+		../../5.7/mingw53_32/include/QtCore/qloggingcategory.h \
+		../../5.7/mingw53_32/include/QtCore/qprocess.h \
+		../../5.7/mingw53_32/include/QtCore/qresource.h \
+		../../5.7/mingw53_32/include/QtCore/qsavefile.h \
+		../../5.7/mingw53_32/include/QtCore/qsettings.h \
+		../../5.7/mingw53_32/include/QtCore/qstandardpaths.h \
+		../../5.7/mingw53_32/include/QtCore/qstorageinfo.h \
+		../../5.7/mingw53_32/include/QtCore/qtemporarydir.h \
+		../../5.7/mingw53_32/include/QtCore/QScopedPointer \
+		../../5.7/mingw53_32/include/QtCore/qtemporaryfile.h \
+		../../5.7/mingw53_32/include/QtCore/qabstractitemmodel.h \
+		../../5.7/mingw53_32/include/QtCore/qabstractproxymodel.h \
+		../../5.7/mingw53_32/include/QtCore/qidentityproxymodel.h \
+		../../5.7/mingw53_32/include/QtCore/qitemselectionmodel.h \
+		../../5.7/mingw53_32/include/QtCore/qsortfilterproxymodel.h \
+		../../5.7/mingw53_32/include/QtCore/qstringlistmodel.h \
+		../../5.7/mingw53_32/include/QtCore/qjsonarray.h \
+		../../5.7/mingw53_32/include/QtCore/qjsonvalue.h \
+		../../5.7/mingw53_32/include/QtCore/qjsondocument.h \
+		../../5.7/mingw53_32/include/QtCore/qjsonobject.h \
+		../../5.7/mingw53_32/include/QtCore/qabstracteventdispatcher.h \
+		../../5.7/mingw53_32/include/QtCore/qeventloop.h \
+		../../5.7/mingw53_32/include/QtCore/qabstractnativeeventfilter.h \
+		../../5.7/mingw53_32/include/QtCore/qbasictimer.h \
+		../../5.7/mingw53_32/include/QtCore/qcoreapplication.h \
+		../../5.7/mingw53_32/include/QtCore/qmath.h \
+		../../5.7/mingw53_32/include/QtCore/qmetaobject.h \
+		../../5.7/mingw53_32/include/QtCore/qmimedata.h \
+		../../5.7/mingw53_32/include/QtCore/qobjectcleanuphandler.h \
+		../../5.7/mingw53_32/include/QtCore/qpointer.h \
+		../../5.7/mingw53_32/include/QtCore/qsharedmemory.h \
+		../../5.7/mingw53_32/include/QtCore/qsignalmapper.h \
+		../../5.7/mingw53_32/include/QtCore/qsocketnotifier.h \
+		../../5.7/mingw53_32/include/QtCore/qsystemsemaphore.h \
+		../../5.7/mingw53_32/include/QtCore/qtimer.h \
+		../../5.7/mingw53_32/include/QtCore/qtranslator.h \
+		../../5.7/mingw53_32/include/QtCore/qwineventnotifier.h \
+		../../5.7/mingw53_32/include/QtCore/qmimedatabase.h \
+		../../5.7/mingw53_32/include/QtCore/qmimetype.h \
+		../../5.7/mingw53_32/include/QtCore/qfactoryinterface.h \
+		../../5.7/mingw53_32/include/QtCore/qlibrary.h \
+		../../5.7/mingw53_32/include/QtCore/qplugin.h \
+		../../5.7/mingw53_32/include/QtCore/qpluginloader.h \
+		../../5.7/mingw53_32/include/QtCore/quuid.h \
+		../../5.7/mingw53_32/include/QtCore/qabstractstate.h \
+		../../5.7/mingw53_32/include/QtCore/qabstracttransition.h \
+		../../5.7/mingw53_32/include/QtCore/qeventtransition.h \
+		../../5.7/mingw53_32/include/QtCore/qfinalstate.h \
+		../../5.7/mingw53_32/include/QtCore/qhistorystate.h \
+		../../5.7/mingw53_32/include/QtCore/qsignaltransition.h \
+		../../5.7/mingw53_32/include/QtCore/qstate.h \
+		../../5.7/mingw53_32/include/QtCore/qstatemachine.h \
+		../../5.7/mingw53_32/include/QtCore/qexception.h \
+		../../5.7/mingw53_32/include/QtCore/qfuture.h \
+		../../5.7/mingw53_32/include/QtCore/qfutureinterface.h \
+		../../5.7/mingw53_32/include/QtCore/qrunnable.h \
+		../../5.7/mingw53_32/include/QtCore/qresultstore.h \
+		../../5.7/mingw53_32/include/QtCore/qfuturesynchronizer.h \
+		../../5.7/mingw53_32/include/QtCore/qfuturewatcher.h \
+		../../5.7/mingw53_32/include/QtCore/qreadwritelock.h \
+		../../5.7/mingw53_32/include/QtCore/qsemaphore.h \
+		../../5.7/mingw53_32/include/QtCore/qthread.h \
+		../../5.7/mingw53_32/include/QtCore/qthreadpool.h \
+		../../5.7/mingw53_32/include/QtCore/qthreadstorage.h \
+		../../5.7/mingw53_32/include/QtCore/qwaitcondition.h \
+		../../5.7/mingw53_32/include/QtCore/qarraydataops.h \
+		../../5.7/mingw53_32/include/QtCore/qarraydatapointer.h \
+		../../5.7/mingw53_32/include/QtCore/qbitarray.h \
+		../../5.7/mingw53_32/include/QtCore/qbytearraymatcher.h \
+		../../5.7/mingw53_32/include/QtCore/qcache.h \
+		../../5.7/mingw53_32/include/QtCore/qcollator.h \
+		../../5.7/mingw53_32/include/QtCore/qcommandlineoption.h \
+		../../5.7/mingw53_32/include/QtCore/qcommandlineparser.h \
+		../../5.7/mingw53_32/include/QtCore/qcryptographichash.h \
+		../../5.7/mingw53_32/include/QtCore/qelapsedtimer.h \
+		../../5.7/mingw53_32/include/QtCore/qlinkedlist.h \
+		../../5.7/mingw53_32/include/QtCore/qmessageauthenticationcode.h \
+		../../5.7/mingw53_32/include/QtCore/qqueue.h \
+		../../5.7/mingw53_32/include/QtCore/qregularexpression.h \
+		../../5.7/mingw53_32/include/QtCore/qscopedvaluerollback.h \
+		../../5.7/mingw53_32/include/QtCore/qstack.h \
+		../../5.7/mingw53_32/include/QtCore/qtextboundaryfinder.h \
+		../../5.7/mingw53_32/include/QtCore/qtimeline.h \
+		../../5.7/mingw53_32/include/QtCore/qtimezone.h \
+		../../5.7/mingw53_32/include/QtCore/qversionnumber.h \
+		../../5.7/mingw53_32/include/QtCore/qxmlstream.h \
+		../../5.7/mingw53_32/include/QtCore/qtcoreversion.h \
+		../../5.7/mingw53_32/include/QtSql/qsqldriver.h \
+		../../5.7/mingw53_32/include/QtSql/qsqldriverplugin.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlerror.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlfield.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlindex.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlresult.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlquerymodel.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlrelationaldelegate.h \
+		../../5.7/mingw53_32/include/QtWidgets/qitemdelegate.h \
+		../../5.7/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../5.7/mingw53_32/include/QtWidgets/qstyleoption.h \
+		../../5.7/mingw53_32/include/QtWidgets/qabstractspinbox.h \
+		../../5.7/mingw53_32/include/QtGui/qvalidator.h \
+		../../5.7/mingw53_32/include/QtWidgets/qslider.h \
+		../../5.7/mingw53_32/include/QtWidgets/qabstractslider.h \
+		../../5.7/mingw53_32/include/QtWidgets/qstyle.h \
+		../../5.7/mingw53_32/include/QtWidgets/qtabbar.h \
+		../../5.7/mingw53_32/include/QtWidgets/qrubberband.h \
+		../../5.7/mingw53_32/include/QtWidgets/qframe.h \
+		../../5.7/mingw53_32/include/QtWidgets/qlistview.h \
+		../../5.7/mingw53_32/include/QtWidgets/qabstractitemview.h \
+		../../5.7/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
+		../../5.7/mingw53_32/include/QtWidgets/qcombobox.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlrelationaltablemodel.h \
+		../../5.7/mingw53_32/include/QtSql/qsqltablemodel.h \
+		../../5.7/mingw53_32/include/QtSql/qtsqlversion.h \
 		../../5.7/mingw53_32/include/QtWidgets/QApplication \
 		../../5.7/mingw53_32/include/QtWidgets/qapplication.h \
-		../../5.7/mingw53_32/include/QtCore/qcoreapplication.h \
-		../../5.7/mingw53_32/include/QtCore/qeventloop.h \
 		../../5.7/mingw53_32/include/QtWidgets/qdesktopwidget.h \
 		../../5.7/mingw53_32/include/QtGui/qguiapplication.h \
 		../../5.7/mingw53_32/include/QtGui/qinputmethod.h
@@ -1136,53 +1410,8 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../5.7/mingw53_32/include/QtSql/QSqlDatabase \
 		../../5.7/mingw53_32/include/QtSql/QSqlRecord \
 		../../5.7/mingw53_32/include/QtSql/qsqlrecord.h \
-		ui_mainwindow.h \
-		../../5.7/mingw53_32/include/QtCore/QVariant \
-		../../5.7/mingw53_32/include/QtWidgets/QAction \
-		../../5.7/mingw53_32/include/QtWidgets/qaction.h \
-		../../5.7/mingw53_32/include/QtWidgets/qactiongroup.h \
-		../../5.7/mingw53_32/include/QtWidgets/QApplication \
-		../../5.7/mingw53_32/include/QtWidgets/qapplication.h \
-		../../5.7/mingw53_32/include/QtCore/qcoreapplication.h \
-		../../5.7/mingw53_32/include/QtCore/qeventloop.h \
-		../../5.7/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		../../5.7/mingw53_32/include/QtGui/qguiapplication.h \
-		../../5.7/mingw53_32/include/QtGui/qinputmethod.h \
-		../../5.7/mingw53_32/include/QtWidgets/QButtonGroup \
-		../../5.7/mingw53_32/include/QtWidgets/qbuttongroup.h \
-		../../5.7/mingw53_32/include/QtWidgets/QHeaderView \
-		../../5.7/mingw53_32/include/QtWidgets/qheaderview.h \
-		../../5.7/mingw53_32/include/QtWidgets/qabstractitemview.h \
-		../../5.7/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
-		../../5.7/mingw53_32/include/QtWidgets/qframe.h \
-		../../5.7/mingw53_32/include/QtCore/qabstractitemmodel.h \
-		../../5.7/mingw53_32/include/QtCore/qitemselectionmodel.h \
-		../../5.7/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
-		../../5.7/mingw53_32/include/QtWidgets/qstyleoption.h \
-		../../5.7/mingw53_32/include/QtWidgets/qabstractspinbox.h \
-		../../5.7/mingw53_32/include/QtGui/qvalidator.h \
-		../../5.7/mingw53_32/include/QtCore/qregularexpression.h \
-		../../5.7/mingw53_32/include/QtWidgets/qslider.h \
-		../../5.7/mingw53_32/include/QtWidgets/qabstractslider.h \
-		../../5.7/mingw53_32/include/QtWidgets/qstyle.h \
-		../../5.7/mingw53_32/include/QtWidgets/qtabbar.h \
-		../../5.7/mingw53_32/include/QtWidgets/qrubberband.h \
-		../../5.7/mingw53_32/include/QtWidgets/QMenuBar \
-		../../5.7/mingw53_32/include/QtWidgets/qmenubar.h \
-		../../5.7/mingw53_32/include/QtWidgets/qmenu.h \
-		../../5.7/mingw53_32/include/QtWidgets/QPushButton \
-		../../5.7/mingw53_32/include/QtWidgets/qpushbutton.h \
-		../../5.7/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		../../5.7/mingw53_32/include/QtWidgets/QWidget \
-		querywindow.h \
-		../../5.7/mingw53_32/include/QtWidgets/QDialog \
-		../../5.7/mingw53_32/include/QtWidgets/qdialog.h \
-		../../5.7/mingw53_32/include/QtWidgets/QTableWidget \
-		../../5.7/mingw53_32/include/QtWidgets/qtablewidget.h \
-		../../5.7/mingw53_32/include/QtWidgets/qtableview.h \
-		jschart.h \
-		../../5.7/mingw53_32/include/QtCharts/QtCharts \
-		../../5.7/mingw53_32/include/QtCharts/QtChartsDepends \
+		../../5.7/mingw53_32/include/QtSql/QtSql \
+		../../5.7/mingw53_32/include/QtSql/QtSqlDepends \
 		../../5.7/mingw53_32/include/QtCore/QtCore \
 		../../5.7/mingw53_32/include/QtCore/QtCoreDepends \
 		../../5.7/mingw53_32/include/QtCore/qabstractanimation.h \
@@ -1216,8 +1445,10 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../5.7/mingw53_32/include/QtCore/qtemporarydir.h \
 		../../5.7/mingw53_32/include/QtCore/QScopedPointer \
 		../../5.7/mingw53_32/include/QtCore/qtemporaryfile.h \
+		../../5.7/mingw53_32/include/QtCore/qabstractitemmodel.h \
 		../../5.7/mingw53_32/include/QtCore/qabstractproxymodel.h \
 		../../5.7/mingw53_32/include/QtCore/qidentityproxymodel.h \
+		../../5.7/mingw53_32/include/QtCore/qitemselectionmodel.h \
 		../../5.7/mingw53_32/include/QtCore/qsortfilterproxymodel.h \
 		../../5.7/mingw53_32/include/QtCore/qstringlistmodel.h \
 		../../5.7/mingw53_32/include/QtCore/qjsonarray.h \
@@ -1225,8 +1456,10 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../5.7/mingw53_32/include/QtCore/qjsondocument.h \
 		../../5.7/mingw53_32/include/QtCore/qjsonobject.h \
 		../../5.7/mingw53_32/include/QtCore/qabstracteventdispatcher.h \
+		../../5.7/mingw53_32/include/QtCore/qeventloop.h \
 		../../5.7/mingw53_32/include/QtCore/qabstractnativeeventfilter.h \
 		../../5.7/mingw53_32/include/QtCore/qbasictimer.h \
+		../../5.7/mingw53_32/include/QtCore/qcoreapplication.h \
 		../../5.7/mingw53_32/include/QtCore/qmath.h \
 		../../5.7/mingw53_32/include/QtCore/qmetaobject.h \
 		../../5.7/mingw53_32/include/QtCore/qmimedata.h \
@@ -1280,6 +1513,7 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../5.7/mingw53_32/include/QtCore/qlinkedlist.h \
 		../../5.7/mingw53_32/include/QtCore/qmessageauthenticationcode.h \
 		../../5.7/mingw53_32/include/QtCore/qqueue.h \
+		../../5.7/mingw53_32/include/QtCore/qregularexpression.h \
 		../../5.7/mingw53_32/include/QtCore/qscopedvaluerollback.h \
 		../../5.7/mingw53_32/include/QtCore/qstack.h \
 		../../5.7/mingw53_32/include/QtCore/qtextboundaryfinder.h \
@@ -1288,6 +1522,62 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../5.7/mingw53_32/include/QtCore/qversionnumber.h \
 		../../5.7/mingw53_32/include/QtCore/qxmlstream.h \
 		../../5.7/mingw53_32/include/QtCore/qtcoreversion.h \
+		../../5.7/mingw53_32/include/QtSql/qsqldriver.h \
+		../../5.7/mingw53_32/include/QtSql/qsqldriverplugin.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlerror.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlfield.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlindex.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlresult.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlquerymodel.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlrelationaldelegate.h \
+		../../5.7/mingw53_32/include/QtWidgets/qitemdelegate.h \
+		../../5.7/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../5.7/mingw53_32/include/QtWidgets/qstyleoption.h \
+		../../5.7/mingw53_32/include/QtWidgets/qabstractspinbox.h \
+		../../5.7/mingw53_32/include/QtGui/qvalidator.h \
+		../../5.7/mingw53_32/include/QtWidgets/qslider.h \
+		../../5.7/mingw53_32/include/QtWidgets/qabstractslider.h \
+		../../5.7/mingw53_32/include/QtWidgets/qstyle.h \
+		../../5.7/mingw53_32/include/QtWidgets/qtabbar.h \
+		../../5.7/mingw53_32/include/QtWidgets/qrubberband.h \
+		../../5.7/mingw53_32/include/QtWidgets/qframe.h \
+		../../5.7/mingw53_32/include/QtWidgets/qlistview.h \
+		../../5.7/mingw53_32/include/QtWidgets/qabstractitemview.h \
+		../../5.7/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
+		../../5.7/mingw53_32/include/QtWidgets/qcombobox.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlrelationaltablemodel.h \
+		../../5.7/mingw53_32/include/QtSql/qsqltablemodel.h \
+		../../5.7/mingw53_32/include/QtSql/qtsqlversion.h \
+		ui_mainwindow.h \
+		../../5.7/mingw53_32/include/QtCore/QVariant \
+		../../5.7/mingw53_32/include/QtWidgets/QAction \
+		../../5.7/mingw53_32/include/QtWidgets/qaction.h \
+		../../5.7/mingw53_32/include/QtWidgets/qactiongroup.h \
+		../../5.7/mingw53_32/include/QtWidgets/QApplication \
+		../../5.7/mingw53_32/include/QtWidgets/qapplication.h \
+		../../5.7/mingw53_32/include/QtWidgets/qdesktopwidget.h \
+		../../5.7/mingw53_32/include/QtGui/qguiapplication.h \
+		../../5.7/mingw53_32/include/QtGui/qinputmethod.h \
+		../../5.7/mingw53_32/include/QtWidgets/QButtonGroup \
+		../../5.7/mingw53_32/include/QtWidgets/qbuttongroup.h \
+		../../5.7/mingw53_32/include/QtWidgets/QHeaderView \
+		../../5.7/mingw53_32/include/QtWidgets/qheaderview.h \
+		../../5.7/mingw53_32/include/QtWidgets/QMenuBar \
+		../../5.7/mingw53_32/include/QtWidgets/qmenubar.h \
+		../../5.7/mingw53_32/include/QtWidgets/qmenu.h \
+		../../5.7/mingw53_32/include/QtWidgets/QPushButton \
+		../../5.7/mingw53_32/include/QtWidgets/qpushbutton.h \
+		../../5.7/mingw53_32/include/QtWidgets/qabstractbutton.h \
+		../../5.7/mingw53_32/include/QtWidgets/QWidget \
+		querywindow.h \
+		../../5.7/mingw53_32/include/QtWidgets/QDialog \
+		../../5.7/mingw53_32/include/QtWidgets/qdialog.h \
+		../../5.7/mingw53_32/include/QtWidgets/QTableWidget \
+		../../5.7/mingw53_32/include/QtWidgets/qtablewidget.h \
+		../../5.7/mingw53_32/include/QtWidgets/qtableview.h \
+		jschart.h \
+		../../5.7/mingw53_32/include/QtCharts/QtCharts \
+		../../5.7/mingw53_32/include/QtCharts/QtChartsDepends \
 		../../5.7/mingw53_32/include/QtGui/QtGui \
 		../../5.7/mingw53_32/include/QtGui/QtGuiDepends \
 		../../5.7/mingw53_32/include/QtGui/qaccessible.h \
@@ -1417,9 +1707,7 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../5.7/mingw53_32/include/QtWidgets/qdatawidgetmapper.h \
 		../../5.7/mingw53_32/include/QtWidgets/qdirmodel.h \
 		../../5.7/mingw53_32/include/QtWidgets/qfileiconprovider.h \
-		../../5.7/mingw53_32/include/QtWidgets/qitemdelegate.h \
 		../../5.7/mingw53_32/include/QtWidgets/qitemeditorfactory.h \
-		../../5.7/mingw53_32/include/QtWidgets/qlistview.h \
 		../../5.7/mingw53_32/include/QtWidgets/qlistwidget.h \
 		../../5.7/mingw53_32/include/QtWidgets/qstyleditemdelegate.h \
 		../../5.7/mingw53_32/include/QtWidgets/qtreeview.h \
@@ -1461,7 +1749,6 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../5.7/mingw53_32/include/QtWidgets/qundoview.h \
 		../../5.7/mingw53_32/include/QtWidgets/qcalendarwidget.h \
 		../../5.7/mingw53_32/include/QtWidgets/qcheckbox.h \
-		../../5.7/mingw53_32/include/QtWidgets/qcombobox.h \
 		../../5.7/mingw53_32/include/QtWidgets/qcommandlinkbutton.h \
 		../../5.7/mingw53_32/include/QtWidgets/qdatetimeedit.h \
 		../../5.7/mingw53_32/include/QtWidgets/qdial.h \
@@ -1714,7 +2001,128 @@ release/querywindow.o: querywindow.cpp querywindow.h \
 		../../5.7/mingw53_32/include/QtGui/qpainter.h \
 		../../5.7/mingw53_32/include/QtGui/qtextoption.h \
 		../../5.7/mingw53_32/include/QtGui/qpen.h \
-		../../5.7/mingw53_32/include/QtSql/QSqlDatabase
+		../../5.7/mingw53_32/include/QtSql/QSqlDatabase \
+		../../5.7/mingw53_32/include/QtSql/QtSql \
+		../../5.7/mingw53_32/include/QtSql/QtSqlDepends \
+		../../5.7/mingw53_32/include/QtCore/QtCore \
+		../../5.7/mingw53_32/include/QtCore/QtCoreDepends \
+		../../5.7/mingw53_32/include/QtCore/qabstractanimation.h \
+		../../5.7/mingw53_32/include/QtCore/qanimationgroup.h \
+		../../5.7/mingw53_32/include/QtCore/qparallelanimationgroup.h \
+		../../5.7/mingw53_32/include/QtCore/qpauseanimation.h \
+		../../5.7/mingw53_32/include/QtCore/qpropertyanimation.h \
+		../../5.7/mingw53_32/include/QtCore/qvariantanimation.h \
+		../../5.7/mingw53_32/include/QtCore/qeasingcurve.h \
+		../../5.7/mingw53_32/include/QtCore/qsequentialanimationgroup.h \
+		../../5.7/mingw53_32/include/QtCore/qtextcodec.h \
+		../../5.7/mingw53_32/include/QtCore/qendian.h \
+		../../5.7/mingw53_32/include/QtCore/qlibraryinfo.h \
+		../../5.7/mingw53_32/include/QtCore/qdatetime.h \
+		../../5.7/mingw53_32/include/QtCore/qbuffer.h \
+		../../5.7/mingw53_32/include/QtCore/qdir.h \
+		../../5.7/mingw53_32/include/QtCore/qfileinfo.h \
+		../../5.7/mingw53_32/include/QtCore/qdiriterator.h \
+		../../5.7/mingw53_32/include/QtCore/qfileselector.h \
+		../../5.7/mingw53_32/include/QtCore/QObject \
+		../../5.7/mingw53_32/include/QtCore/QStringList \
+		../../5.7/mingw53_32/include/QtCore/qfilesystemwatcher.h \
+		../../5.7/mingw53_32/include/QtCore/qlockfile.h \
+		../../5.7/mingw53_32/include/QtCore/qloggingcategory.h \
+		../../5.7/mingw53_32/include/QtCore/qprocess.h \
+		../../5.7/mingw53_32/include/QtCore/qresource.h \
+		../../5.7/mingw53_32/include/QtCore/qsavefile.h \
+		../../5.7/mingw53_32/include/QtCore/qsettings.h \
+		../../5.7/mingw53_32/include/QtCore/qstandardpaths.h \
+		../../5.7/mingw53_32/include/QtCore/qstorageinfo.h \
+		../../5.7/mingw53_32/include/QtCore/qtemporarydir.h \
+		../../5.7/mingw53_32/include/QtCore/QScopedPointer \
+		../../5.7/mingw53_32/include/QtCore/qtemporaryfile.h \
+		../../5.7/mingw53_32/include/QtCore/qabstractproxymodel.h \
+		../../5.7/mingw53_32/include/QtCore/qidentityproxymodel.h \
+		../../5.7/mingw53_32/include/QtCore/qsortfilterproxymodel.h \
+		../../5.7/mingw53_32/include/QtCore/qstringlistmodel.h \
+		../../5.7/mingw53_32/include/QtCore/qjsonarray.h \
+		../../5.7/mingw53_32/include/QtCore/qjsonvalue.h \
+		../../5.7/mingw53_32/include/QtCore/qjsondocument.h \
+		../../5.7/mingw53_32/include/QtCore/qjsonobject.h \
+		../../5.7/mingw53_32/include/QtCore/qabstracteventdispatcher.h \
+		../../5.7/mingw53_32/include/QtCore/qabstractnativeeventfilter.h \
+		../../5.7/mingw53_32/include/QtCore/qbasictimer.h \
+		../../5.7/mingw53_32/include/QtCore/qmath.h \
+		../../5.7/mingw53_32/include/QtCore/qmetaobject.h \
+		../../5.7/mingw53_32/include/QtCore/qmimedata.h \
+		../../5.7/mingw53_32/include/QtCore/qobjectcleanuphandler.h \
+		../../5.7/mingw53_32/include/QtCore/qpointer.h \
+		../../5.7/mingw53_32/include/QtCore/qsharedmemory.h \
+		../../5.7/mingw53_32/include/QtCore/qsignalmapper.h \
+		../../5.7/mingw53_32/include/QtCore/qsocketnotifier.h \
+		../../5.7/mingw53_32/include/QtCore/qsystemsemaphore.h \
+		../../5.7/mingw53_32/include/QtCore/qtimer.h \
+		../../5.7/mingw53_32/include/QtCore/qtranslator.h \
+		../../5.7/mingw53_32/include/QtCore/qwineventnotifier.h \
+		../../5.7/mingw53_32/include/QtCore/qmimedatabase.h \
+		../../5.7/mingw53_32/include/QtCore/qmimetype.h \
+		../../5.7/mingw53_32/include/QtCore/qfactoryinterface.h \
+		../../5.7/mingw53_32/include/QtCore/qlibrary.h \
+		../../5.7/mingw53_32/include/QtCore/qplugin.h \
+		../../5.7/mingw53_32/include/QtCore/qpluginloader.h \
+		../../5.7/mingw53_32/include/QtCore/quuid.h \
+		../../5.7/mingw53_32/include/QtCore/qabstractstate.h \
+		../../5.7/mingw53_32/include/QtCore/qabstracttransition.h \
+		../../5.7/mingw53_32/include/QtCore/qeventtransition.h \
+		../../5.7/mingw53_32/include/QtCore/qfinalstate.h \
+		../../5.7/mingw53_32/include/QtCore/qhistorystate.h \
+		../../5.7/mingw53_32/include/QtCore/qsignaltransition.h \
+		../../5.7/mingw53_32/include/QtCore/qstate.h \
+		../../5.7/mingw53_32/include/QtCore/qstatemachine.h \
+		../../5.7/mingw53_32/include/QtCore/qexception.h \
+		../../5.7/mingw53_32/include/QtCore/qfuture.h \
+		../../5.7/mingw53_32/include/QtCore/qfutureinterface.h \
+		../../5.7/mingw53_32/include/QtCore/qrunnable.h \
+		../../5.7/mingw53_32/include/QtCore/qresultstore.h \
+		../../5.7/mingw53_32/include/QtCore/qfuturesynchronizer.h \
+		../../5.7/mingw53_32/include/QtCore/qfuturewatcher.h \
+		../../5.7/mingw53_32/include/QtCore/qreadwritelock.h \
+		../../5.7/mingw53_32/include/QtCore/qsemaphore.h \
+		../../5.7/mingw53_32/include/QtCore/qthread.h \
+		../../5.7/mingw53_32/include/QtCore/qthreadpool.h \
+		../../5.7/mingw53_32/include/QtCore/qthreadstorage.h \
+		../../5.7/mingw53_32/include/QtCore/qwaitcondition.h \
+		../../5.7/mingw53_32/include/QtCore/qarraydataops.h \
+		../../5.7/mingw53_32/include/QtCore/qarraydatapointer.h \
+		../../5.7/mingw53_32/include/QtCore/qbitarray.h \
+		../../5.7/mingw53_32/include/QtCore/qbytearraymatcher.h \
+		../../5.7/mingw53_32/include/QtCore/qcache.h \
+		../../5.7/mingw53_32/include/QtCore/qcollator.h \
+		../../5.7/mingw53_32/include/QtCore/qcommandlineoption.h \
+		../../5.7/mingw53_32/include/QtCore/qcommandlineparser.h \
+		../../5.7/mingw53_32/include/QtCore/qcryptographichash.h \
+		../../5.7/mingw53_32/include/QtCore/qelapsedtimer.h \
+		../../5.7/mingw53_32/include/QtCore/qlinkedlist.h \
+		../../5.7/mingw53_32/include/QtCore/qmessageauthenticationcode.h \
+		../../5.7/mingw53_32/include/QtCore/qqueue.h \
+		../../5.7/mingw53_32/include/QtCore/qscopedvaluerollback.h \
+		../../5.7/mingw53_32/include/QtCore/qstack.h \
+		../../5.7/mingw53_32/include/QtCore/qtextboundaryfinder.h \
+		../../5.7/mingw53_32/include/QtCore/qtimeline.h \
+		../../5.7/mingw53_32/include/QtCore/qtimezone.h \
+		../../5.7/mingw53_32/include/QtCore/qversionnumber.h \
+		../../5.7/mingw53_32/include/QtCore/qxmlstream.h \
+		../../5.7/mingw53_32/include/QtCore/qtcoreversion.h \
+		../../5.7/mingw53_32/include/QtSql/qsqldriver.h \
+		../../5.7/mingw53_32/include/QtSql/qsqldriverplugin.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlerror.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlfield.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlindex.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlresult.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlquerymodel.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlrelationaldelegate.h \
+		../../5.7/mingw53_32/include/QtWidgets/qitemdelegate.h \
+		../../5.7/mingw53_32/include/QtWidgets/qlistview.h \
+		../../5.7/mingw53_32/include/QtWidgets/qcombobox.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlrelationaltablemodel.h \
+		../../5.7/mingw53_32/include/QtSql/qsqltablemodel.h \
+		../../5.7/mingw53_32/include/QtSql/qtsqlversion.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\querywindow.o querywindow.cpp
 
 release/jschart.o: jschart.cpp jschart.h \
@@ -2252,7 +2660,20 @@ release/jschart.o: jschart.cpp jschart.h \
 		../../5.7/mingw53_32/include/QtSql/qsqldatabase.h \
 		../../5.7/mingw53_32/include/QtSql/QSqlDatabase \
 		../../5.7/mingw53_32/include/QtSql/QSqlRecord \
-		../../5.7/mingw53_32/include/QtSql/qsqlrecord.h
+		../../5.7/mingw53_32/include/QtSql/qsqlrecord.h \
+		../../5.7/mingw53_32/include/QtSql/QtSql \
+		../../5.7/mingw53_32/include/QtSql/QtSqlDepends \
+		../../5.7/mingw53_32/include/QtSql/qsqldriver.h \
+		../../5.7/mingw53_32/include/QtSql/qsqldriverplugin.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlerror.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlfield.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlindex.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlresult.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlquerymodel.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlrelationaldelegate.h \
+		../../5.7/mingw53_32/include/QtSql/qsqlrelationaltablemodel.h \
+		../../5.7/mingw53_32/include/QtSql/qsqltablemodel.h \
+		../../5.7/mingw53_32/include/QtSql/qtsqlversion.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\jschart.o jschart.cpp
 
 release/moc_mainwindow.o: release/moc_mainwindow.cpp 

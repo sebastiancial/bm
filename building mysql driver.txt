@@ -1,0 +1,3 @@
+cd C:\Qt\5.7\Src\qtbase\src\plugins\sqldrivers\mysql
+qmake "CONFIG+=release" "INCLUDEPATH+=C:\mc\include" "LIBS+=-LC:\mc\lib" "LIBS+=-llibmysql" mysql.pro
+qmake "CONFIG+=release" "INCLUDEPATH+=C:\mc\include" "LIBS+=C:\mc\lib" "LIBS+=libmysql" mysql.pro
