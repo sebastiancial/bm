@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.7.0
+** Created by: Qt User Interface Compiler version 5.7.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -42,15 +42,21 @@ public:
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         pushButton = new QPushButton(centralWidget);
         pushButton->setObjectName(QStringLiteral("pushButton"));
+        pushButton->setEnabled(true);
         pushButton->setGeometry(QRect(20, 480, 240, 75));
         QFont font;
         font.setPointSize(14);
+        font.setBold(false);
+        font.setWeight(50);
         pushButton->setFont(font);
+        pushButton->setIconSize(QSize(20, 20));
+        pushButton->setAutoDefault(false);
+        pushButton->setFlat(false);
         pushButton_2 = new QPushButton(centralWidget);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
         pushButton_2->setGeometry(QRect(540, 480, 240, 75));
         QFont font1;
-        font1.setPointSize(14);
+        font1.setPointSize(12);
         font1.setBold(false);
         font1.setWeight(50);
         pushButton_2->setFont(font1);
@@ -61,20 +67,23 @@ public:
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 800, 21));
+        menuBar->setGeometry(QRect(0, 0, 800, 26));
         MainWindow->setMenuBar(menuBar);
 
         retranslateUi(MainWindow);
+
+        pushButton->setDefault(false);
+
 
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
-        pushButton->setText(QApplication::translate("MainWindow", "Connect to the database", 0));
-        pushButton_2->setText(QApplication::translate("MainWindow", "Check the database", 0));
-        pushButton_3->setText(QApplication::translate("MainWindow", "Draw a chart", 0));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", Q_NULLPTR));
+        pushButton->setText(QApplication::translate("MainWindow", "Connect to the database", Q_NULLPTR));
+        pushButton_2->setText(QApplication::translate("MainWindow", "Check the database", Q_NULLPTR));
+        pushButton_3->setText(QApplication::translate("MainWindow", "Draw a chart", Q_NULLPTR));
     } // retranslateUi
 
 };

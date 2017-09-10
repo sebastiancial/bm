@@ -4,12 +4,12 @@
 #include "jschart.h"
 
 
-
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
 
     ui(new Ui::MainWindow)
 {
+
 
     ui->setupUi(this);
 
@@ -24,6 +24,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
+
 
     db = QSqlDatabase::addDatabase("QMYSQL");
     db.setHostName("eu-cdbr-west-01.cleardb.com");
