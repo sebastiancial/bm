@@ -1,0 +1,5 @@
+Server: sql11.freemysqlhosting.net
+Name: sql11185142
+Username: sql11185142
+Password: 4TJqTh1mqm
+Port number: 3306
