@@ -16,9 +16,21 @@ querywindow::querywindow(QWidget *parent) :
     setWindowFlags(windowFlags() | Qt::WindowMinimizeButtonHint);
 
     ui->setupUi(this);// Ja nie mogę... wszystko trzeba po tym deklarować...
-
+    this->setWindowTitle("Data Table");
+    //edycja wyglądu okna
+    ui->tableWidget->verticalHeader()->setVisible(false);
+    ui->tableWidget->setEditTriggers(QAbstractItemView::NoEditTriggers);
     ui->tableWidget->setRowCount(queryshare.size());
     ui->tableWidget->setColumnCount(queryshare.record().count());
+    ui->tableWidget->setHorizontalHeaderItem(0, new QTableWidgetItem("ID"));
+    ui->tableWidget->setHorizontalHeaderItem(1, new QTableWidgetItem("Date"));
+    ui->tableWidget->setHorizontalHeaderItem(2, new QTableWidgetItem("Value"));
+    ui->tableWidget->setHorizontalHeaderItem(3, new QTableWidgetItem("Volume"));
+    ui->tableWidget->setColumnWidth(0, 130);
+    ui->tableWidget->setColumnWidth(1, 155);
+    ui->tableWidget->setColumnWidth(2, 150);
+    ui->tableWidget->setColumnWidth(3, 155);
+
 
     queryshare.first();
 

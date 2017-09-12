@@ -5,6 +5,7 @@
 #include <QTableWidget>
 #include <QSqlQuery>
 #include <QSqlRecord>
+#include <QHeaderView>
 
 
 
