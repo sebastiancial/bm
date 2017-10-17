@@ -28,6 +28,8 @@ jschart::jschart(QWidget *parent) :
 
 
 
+
+
         series->append(queryshare.value(0).toDouble(), queryshare.value(2).toDouble());
         queryshare.next();
 
@@ -40,14 +42,14 @@ jschart::jschart(QWidget *parent) :
     chart->legend()->hide();
     chart->addSeries(series);
     chart->createDefaultAxes();
-    chart->setTitle("Simple line chart example");
+    chart->setTitle("Bitoinc exchange chart");
 
     QChartView *chartView = new QChartView(chart);
     chartView->setRenderHint(QPainter::Antialiasing);
 
     //QWidget * widget;
 
-    QWidget * chartWindow = ui->testowy;
+    QWidget * chartWindow = ui->chart;
 
 
 

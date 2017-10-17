@@ -1,6 +1,8 @@
 #include "querywindow.h"
 #include "ui_querywindow.h"
 #include "mainwindow.h"
+#include "time.h"
+#include <stdio.h>
 
 //global variable
 QSqlQuery queryshare;
@@ -40,6 +42,19 @@ querywindow::querywindow(QWidget *parent) :
         for(int n=0;n<queryshare.record().count();n++)
         {
             QString querytxt=queryshare.value(n).toString();
+            if (n==1){
+                int intdate = querytxt.toInt();
+                time_t tdate = intdate;
+                struct tm * timeinfo;
+                char buffer [80];
+
+                timeinfo = localtime ( &tdate );
+                strftime (buffer,80," %m/%d/%y ",timeinfo);
+
+                querytxt=buffer;
+
+
+            }
             ui->tableWidget->setItem(m,n,new QTableWidgetItem(querytxt));
 
         }

@@ -22,7 +22,7 @@ QT_BEGIN_NAMESPACE
 class Ui_jschart
 {
 public:
-    QWidget *testowy;
+    QWidget *chart;
 
     void setupUi(QDialog *jschart)
     {
@@ -30,9 +30,9 @@ public:
             jschart->setObjectName(QStringLiteral("jschart"));
         jschart->setWindowModality(Qt::NonModal);
         jschart->resize(800, 600);
-        testowy = new QWidget(jschart);
-        testowy->setObjectName(QStringLiteral("testowy"));
-        testowy->setGeometry(QRect(10, 10, 781, 491));
+        chart = new QWidget(jschart);
+        chart->setObjectName(QStringLiteral("chart"));
+        chart->setGeometry(QRect(10, 10, 781, 491));
 
         retranslateUi(jschart);
 

@@ -484,6 +484,8 @@ release/moc_querywindow.cpp: ../../5.7/mingw53_32/include/QtWidgets/QDialog \
 		../../5.7/mingw53_32/include/QtSql/qsqldatabase.h \
 		../../5.7/mingw53_32/include/QtSql/QSqlRecord \
 		../../5.7/mingw53_32/include/QtSql/qsqlrecord.h \
+		../../5.7/mingw53_32/include/QtWidgets/QHeaderView \
+		../../5.7/mingw53_32/include/QtWidgets/qheaderview.h \
 		querywindow.h \
 		../../5.7/mingw53_32/bin/moc.exe
 	C:\Qt\5.7\mingw53_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/5.7/mingw53_32/mkspecs/win32-g++ -IC:/Qt/workspace/bm -IC:/Qt/5.7/mingw53_32/include -IC:/Qt/5.7/mingw53_32/include/QtCharts -IC:/Qt/5.7/mingw53_32/include/QtWidgets -IC:/Qt/5.7/mingw53_32/include/QtGui -IC:/Qt/5.7/mingw53_32/include/QtANGLE -IC:/Qt/5.7/mingw53_32/include/QtSql -IC:/Qt/5.7/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward querywindow.h -o release\moc_querywindow.cpp
@@ -1978,6 +1980,8 @@ release/querywindow.o: querywindow.cpp querywindow.h \
 		../../5.7/mingw53_32/include/QtSql/qsqldatabase.h \
 		../../5.7/mingw53_32/include/QtSql/QSqlRecord \
 		../../5.7/mingw53_32/include/QtSql/qsqlrecord.h \
+		../../5.7/mingw53_32/include/QtWidgets/QHeaderView \
+		../../5.7/mingw53_32/include/QtWidgets/qheaderview.h \
 		ui_querywindow.h \
 		../../5.7/mingw53_32/include/QtCore/QVariant \
 		../../5.7/mingw53_32/include/QtWidgets/QAction \
@@ -1992,8 +1996,14 @@ release/querywindow.o: querywindow.cpp querywindow.h \
 		../../5.7/mingw53_32/include/QtGui/qinputmethod.h \
 		../../5.7/mingw53_32/include/QtWidgets/QButtonGroup \
 		../../5.7/mingw53_32/include/QtWidgets/qbuttongroup.h \
-		../../5.7/mingw53_32/include/QtWidgets/QHeaderView \
-		../../5.7/mingw53_32/include/QtWidgets/qheaderview.h \
+		../../5.7/mingw53_32/include/QtWidgets/QGridLayout \
+		../../5.7/mingw53_32/include/QtWidgets/qgridlayout.h \
+		../../5.7/mingw53_32/include/QtWidgets/qlayout.h \
+		../../5.7/mingw53_32/include/QtWidgets/qlayoutitem.h \
+		../../5.7/mingw53_32/include/QtWidgets/qboxlayout.h \
+		../../5.7/mingw53_32/include/QtWidgets/QLabel \
+		../../5.7/mingw53_32/include/QtWidgets/qlabel.h \
+		../../5.7/mingw53_32/include/QtWidgets/QSpacerItem \
 		mainwindow.h \
 		../../5.7/mingw53_32/include/QtWidgets/QMainWindow \
 		../../5.7/mingw53_32/include/QtWidgets/qmainwindow.h \

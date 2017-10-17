@@ -16,7 +16,7 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QWidget" name="testowy" native="true">
+  <widget class="QWidget" name="chart" native="true">
    <property name="geometry">
     <rect>
      <x>10</x>
