@@ -1,7 +1,6 @@
 #include "querywindow.h"
 #include "ui_querywindow.h"
 #include "mainwindow.h"
-#include "time.h"
 #include <stdio.h>
 
 //global variable
@@ -49,9 +48,11 @@ querywindow::querywindow(QWidget *parent) :
                 char buffer [80];
 
                 timeinfo = localtime ( &tdate );
-                strftime (buffer,80," %m/%d/%y ",timeinfo);
-
+                strftime (buffer,80," %d/%m/%y ",timeinfo);
                 querytxt=buffer;
+
+                //QString transportstring = buffer;
+                //QDate transport[n]=QDate::fromString(transportstring,"dd/MM/yyyy");
 
 
             }

@@ -13,51 +13,54 @@ jschart::jschart(QWidget *parent) :
 
     ui->setupUi(this);
 
-
-
-//    series->append(0, 6);
-//    series->append(2, 4);
-//    series->append(3, 8);
-//    series->append(7, 4);
-//    series->append(10, 5);
-//    *series << QPointF(11, 1) << QPointF(13, 3) << QPointF(17, 6) << QPointF(18, 3) << QPointF(20, 2);
+    int intdate;
+    QDateTime datetm;
+    QLineSeries *series = new QLineSeries;
 
     queryshare.first();
     for(int m=0;m<queryshare.size();m++)
     {
 
+        intdate=queryshare.value(1).toInt();
+        time_t tdate = intdate;
+        datetm.setTime_t(tdate);
+        //qInfo()<<datetm;
+        qreal yvalue = queryshare.value(2).toInt();
+        series->append(datetm.toMSecsSinceEpoch(), yvalue );
 
-
-
-
-        series->append(queryshare.value(0).toDouble(), queryshare.value(2).toDouble());
         queryshare.next();
-
-
-
 
     }
 
-    QChart *chart = new QChart();
+
+    //general chart preperities
+    QChart *chart = new QChart();;
     chart->legend()->hide();
-    chart->addSeries(series);
-    chart->createDefaultAxes();
     chart->setTitle("Bitoinc exchange chart");
 
-    QChartView *chartView = new QChartView(chart);
-    chartView->setRenderHint(QPainter::Antialiasing);
+    QDateTimeAxis *axisX = new QDateTimeAxis;
+    axisX->setTickCount(10);
+    axisX->setFormat("MM/yyyy");
+    axisX->setTitleText("Date");
 
-    //QWidget * widget;
+    QValueAxis *axisY = new QValueAxis;
+    axisY->setLabelFormat("%i");
+    axisY->setTitleText("Value in $");
+
+
+    QChartView *chartView = new QChartView(chart);
+    chartView->chart()->addSeries(series);
+    chartView->chart()->setAxisX(axisX, series);
+    chartView->chart()->setAxisY(axisY, series);
+    chartView->setRenderHint(QPainter::Antialiasing);
 
     QWidget * chartWindow = ui->chart;
 
-
-
     QVBoxLayout *layout = new QVBoxLayout(chartWindow);
+
     layout->addWidget(chartView);
+
     setLayout(layout);
-
-
 
     layout->activate();
 

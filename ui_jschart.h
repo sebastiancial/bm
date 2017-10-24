@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'jschart.ui'
 **
-** Created by: Qt User Interface Compiler version 5.7.1
+** Created by: Qt User Interface Compiler version 5.7.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -41,7 +41,7 @@ public:
 
     void retranslateUi(QDialog *jschart)
     {
-        jschart->setWindowTitle(QApplication::translate("jschart", "Dialog", Q_NULLPTR));
+        jschart->setWindowTitle(QApplication::translate("jschart", "Dialog", 0));
     } // retranslateUi
 
 };

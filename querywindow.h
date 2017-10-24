@@ -6,6 +6,8 @@
 #include <QSqlQuery>
 #include <QSqlRecord>
 #include <QHeaderView>
+#include <QDate>
+#include "time.h"
 
 
 
@@ -19,6 +21,8 @@ class querywindow : public QDialog
 
 public:
     explicit querywindow(QWidget *parent = 0);
+
+
 
     ~querywindow();
 

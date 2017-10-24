@@ -5,6 +5,10 @@
 #include <QDialog>
 #include <QtCharts>
 #include <QtWidgets>
+#include <QDateTime>
+#include <QDateTimeAxis>
+#include <QLineSeries>
+#include "time.h"
 
 
 
@@ -21,10 +25,11 @@ class jschart : public QDialog
 
 public:
     explicit jschart(QWidget *parent = 0);
+
     ~jschart();
 
 private:
-    QLineSeries *series = new QLineSeries();
+
     Ui::jschart *ui;
 };
 

@@ -10,6 +10,7 @@
 
 //global variables
 extern QSqlQuery queryshare;
+extern QDate transport[1000];
 
 
 namespace Ui {
