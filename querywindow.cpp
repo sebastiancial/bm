@@ -1,11 +1,6 @@
 #include "querywindow.h"
 #include "ui_querywindow.h"
 #include "mainwindow.h"
-#include <stdio.h>
-
-//global variable
-QSqlQuery queryshare;
-
 
 
 querywindow::querywindow(QWidget *parent) :
@@ -18,6 +13,8 @@ querywindow::querywindow(QWidget *parent) :
 
     ui->setupUi(this);// Ja nie mogę... wszystko trzeba po tym deklarować...
     this->setWindowTitle("Data Table");
+
+
     //edycja wyglądu okna
     ui->tableWidget->verticalHeader()->setVisible(false);
     ui->tableWidget->setEditTriggers(QAbstractItemView::NoEditTriggers);

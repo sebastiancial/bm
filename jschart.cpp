@@ -3,8 +3,6 @@
 #include "mainwindow.h"
 
 
-
-
 jschart::jschart(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::jschart)

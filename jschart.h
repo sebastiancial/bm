@@ -26,6 +26,7 @@ class jschart : public QDialog
 public:
     explicit jschart(QWidget *parent = 0);
 
+
     ~jschart();
 
 private:

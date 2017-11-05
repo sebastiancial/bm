@@ -7,10 +7,10 @@
 #include <QSqlDatabase>
 #include <QSqlRecord>
 #include <QtSql>
+#include <QNetworkAccessManager>
 
 //global variables
 extern QSqlQuery queryshare;
-extern QDate transport[1000];
 
 
 namespace Ui {
@@ -25,6 +25,8 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     QSqlDatabase db;
+    //QDate transport[1000];
+
 
 
 

@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui sql widgets charts
+QT       += core gui sql widgets charts network
 
 
 TARGET = bm

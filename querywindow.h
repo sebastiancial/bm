@@ -7,6 +7,7 @@
 #include <QSqlRecord>
 #include <QHeaderView>
 #include <QDate>
+#include <stdio.h>
 #include "time.h"
 
 

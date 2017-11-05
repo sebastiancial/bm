@@ -3,6 +3,8 @@
 #include "querywindow.h"
 #include "jschart.h"
 
+//global variable
+QSqlQuery queryshare;
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),

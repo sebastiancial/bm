@@ -11,13 +11,13 @@ MAKEFILE      = Makefile.Debug
 
 CC            = gcc
 CXX           = g++
-DEFINES       = -DUNICODE -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_NEEDS_QMAIN
+DEFINES       = -DUNICODE -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_NEEDS_QMAIN
 CFLAGS        = -pipe -fno-keep-inline-dllexport -g -Wall -Wextra $(DEFINES)
 CXXFLAGS      = -pipe -fno-keep-inline-dllexport -g -std=gnu++11 -frtti -Wall -Wextra -fexceptions -mthreads $(DEFINES)
-INCPATH       = -I. -I..\..\5.7\mingw53_32\include -I..\..\5.7\mingw53_32\include\QtCharts -I..\..\5.7\mingw53_32\include\QtWidgets -I..\..\5.7\mingw53_32\include\QtGui -I..\..\5.7\mingw53_32\include\QtANGLE -I..\..\5.7\mingw53_32\include\QtSql -I..\..\5.7\mingw53_32\include\QtCore -Idebug -I. -I..\..\5.7\mingw53_32\mkspecs\win32-g++ 
+INCPATH       = -I. -I..\..\5.7\mingw53_32\include -I..\..\5.7\mingw53_32\include\QtCharts -I..\..\5.7\mingw53_32\include\QtWidgets -I..\..\5.7\mingw53_32\include\QtGui -I..\..\5.7\mingw53_32\include\QtANGLE -I..\..\5.7\mingw53_32\include\QtSql -I..\..\5.7\mingw53_32\include\QtNetwork -I..\..\5.7\mingw53_32\include\QtCore -Idebug -I. -I..\..\5.7\mingw53_32\mkspecs\win32-g++ 
 LINKER      =        g++
 LFLAGS        =        -Wl,-subsystem,windows -mthreads
-LIBS        =        -lmingw32 -LC:\Qt\5.7\mingw53_32\lib C:\Qt\5.7\mingw53_32\lib\libqtmaind.a -lshell32 -LC:\utils\my_sql\my_sql\lib -LC:\utils\postgresql\pgsql\lib C:\Qt\5.7\mingw53_32\lib\libQt5Chartsd.a C:\Qt\5.7\mingw53_32\lib\libQt5Widgetsd.a C:\Qt\5.7\mingw53_32\lib\libQt5Guid.a C:\Qt\5.7\mingw53_32\lib\libQt5Sqld.a C:\Qt\5.7\mingw53_32\lib\libQt5Cored.a 
+LIBS        =        -lmingw32 -LC:\Qt\5.7\mingw53_32\lib C:\Qt\5.7\mingw53_32\lib\libqtmaind.a -lshell32 -LC:\utils\my_sql\my_sql\lib -LC:\utils\postgresql\pgsql\lib C:\Qt\5.7\mingw53_32\lib\libQt5Chartsd.a C:\Qt\5.7\mingw53_32\lib\libQt5Widgetsd.a C:\Qt\5.7\mingw53_32\lib\libQt5Guid.a C:\Qt\5.7\mingw53_32\lib\libQt5Sqld.a C:\Qt\5.7\mingw53_32\lib\libQt5Networkd.a C:\Qt\5.7\mingw53_32\lib\libQt5Cored.a 
 QMAKE         = C:\Qt\5.7\mingw53_32\bin\qmake.exe
 IDC           = idc
 IDL           = midl
@@ -82,7 +82,7 @@ qmake: FORCE
 qmake_all: FORCE
 
 dist:
-	$(ZIP) bm.zip $(SOURCES) $(DIST) bm.pro ..\..\5.7\mingw53_32\mkspecs\features\spec_pre.prf ..\..\5.7\mingw53_32\mkspecs\qdevice.pri ..\..\5.7\mingw53_32\mkspecs\features\device_config.prf ..\..\5.7\mingw53_32\mkspecs\common\angle.conf ..\..\5.7\mingw53_32\mkspecs\qconfig.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dcore.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dcore_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dextras.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dextras_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dinput.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dinput_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dlogic.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dlogic_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dquick.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dquick_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dquickextras.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dquickextras_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dquickinput.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dquickinput_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dquickrender.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dquickrender_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3drender.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3drender_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_axbase.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_axbase_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_axcontainer.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_axcontainer_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_axserver.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_axserver_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_bluetooth.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_bluetooth_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_bootstrap_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_charts.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_charts_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_clucene_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_concurrent.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_concurrent_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_core.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_core_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_datavisualization.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_datavisualization_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_dbus.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_dbus_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_designer.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_designer_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_designercomponents_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_gamepad.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_gamepad_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_gui.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_gui_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_help.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_help_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_location.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_location_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_multimedia.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_multimedia_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_multimediawidgets.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_multimediawidgets_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_network.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_network_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_nfc.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_nfc_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_opengl.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_opengl_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_openglextensions.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_openglextensions_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_packetprotocol_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_platformsupport_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_positioning.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_positioning_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_printsupport.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_printsupport_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_purchasing.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_purchasing_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_qml.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_qml_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_qmldebug_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_qmldevtools_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_qmltest.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_qmltest_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_qtmultimediaquicktools_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_quick.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_quick_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_quickcontrols2.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_quickcontrols2_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_quickparticles_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_quicktemplates2_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_quickwidgets.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_quickwidgets_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_script.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_script_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_scripttools.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_scripttools_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_scxml.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_scxml_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_sensors.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_sensors_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_serialbus.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_serialbus_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_serialport.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_serialport_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_sql.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_sql_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_svg.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_svg_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_testlib.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_testlib_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_uiplugin.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_uitools.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_uitools_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_webchannel.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_webchannel_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_websockets.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_websockets_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_widgets.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_widgets_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_winextras.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_winextras_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_xml.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_xml_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_xmlpatterns.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_xmlpatterns_private.pri ..\..\5.7\mingw53_32\mkspecs\features\qt_functions.prf ..\..\5.7\mingw53_32\mkspecs\features\qt_config.prf ..\..\5.7\mingw53_32\mkspecs\features\win32\qt_config.prf ..\..\5.7\mingw53_32\mkspecs\win32-g++\qmake.conf ..\..\5.7\mingw53_32\mkspecs\features\spec_post.prf .qmake.stash ..\..\5.7\mingw53_32\mkspecs\features\exclusive_builds.prf ..\..\5.7\mingw53_32\mkspecs\features\toolchain.prf ..\..\5.7\mingw53_32\mkspecs\features\default_pre.prf ..\..\5.7\mingw53_32\mkspecs\features\win32\default_pre.prf ..\..\5.7\mingw53_32\mkspecs\features\resolve_config.prf ..\..\5.7\mingw53_32\mkspecs\features\exclusive_builds_post.prf ..\..\5.7\mingw53_32\mkspecs\features\default_post.prf ..\..\5.7\mingw53_32\mkspecs\features\build_pass.prf ..\..\5.7\mingw53_32\mkspecs\features\win32\rtti.prf ..\..\5.7\mingw53_32\mkspecs\features\precompile_header.prf ..\..\5.7\mingw53_32\mkspecs\features\warn_on.prf ..\..\5.7\mingw53_32\mkspecs\features\qt.prf ..\..\5.7\mingw53_32\mkspecs\features\resources.prf ..\..\5.7\mingw53_32\mkspecs\features\moc.prf ..\..\5.7\mingw53_32\mkspecs\features\win32\opengl.prf ..\..\5.7\mingw53_32\mkspecs\features\uic.prf ..\..\5.7\mingw53_32\mkspecs\features\file_copies.prf ..\..\5.7\mingw53_32\mkspecs\features\win32\windows.prf ..\..\5.7\mingw53_32\mkspecs\features\testcase_targets.prf ..\..\5.7\mingw53_32\mkspecs\features\exceptions.prf ..\..\5.7\mingw53_32\mkspecs\features\yacc.prf ..\..\5.7\mingw53_32\mkspecs\features\lex.prf bm.pro ..\..\5.7\mingw53_32\lib\qtmaind.prl ..\..\5.7\mingw53_32\lib\Qt5Chartsd.prl ..\..\5.7\mingw53_32\lib\Qt5Widgetsd.prl ..\..\5.7\mingw53_32\lib\Qt5Guid.prl ..\..\5.7\mingw53_32\lib\Qt5Sqld.prl ..\..\5.7\mingw53_32\lib\Qt5Cored.prl  NO_PCH_SOURCES RESOURCES HEADERS SOURCES OBJECTIVE_SOURCES FORMS YACCSOURCES YACCSOURCES LEXSOURCES 
+	$(ZIP) bm.zip $(SOURCES) $(DIST) bm.pro ..\..\5.7\mingw53_32\mkspecs\features\spec_pre.prf ..\..\5.7\mingw53_32\mkspecs\qdevice.pri ..\..\5.7\mingw53_32\mkspecs\features\device_config.prf ..\..\5.7\mingw53_32\mkspecs\common\angle.conf ..\..\5.7\mingw53_32\mkspecs\qconfig.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dcore.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dcore_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dextras.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dextras_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dinput.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dinput_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dlogic.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dlogic_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dquick.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dquick_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dquickextras.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dquickextras_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dquickinput.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dquickinput_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dquickrender.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3dquickrender_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3drender.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_3drender_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_axbase.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_axbase_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_axcontainer.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_axcontainer_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_axserver.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_axserver_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_bluetooth.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_bluetooth_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_bootstrap_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_charts.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_charts_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_clucene_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_concurrent.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_concurrent_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_core.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_core_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_datavisualization.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_datavisualization_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_dbus.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_dbus_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_designer.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_designer_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_designercomponents_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_gamepad.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_gamepad_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_gui.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_gui_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_help.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_help_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_location.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_location_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_multimedia.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_multimedia_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_multimediawidgets.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_multimediawidgets_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_network.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_network_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_nfc.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_nfc_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_opengl.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_opengl_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_openglextensions.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_openglextensions_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_packetprotocol_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_platformsupport_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_positioning.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_positioning_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_printsupport.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_printsupport_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_purchasing.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_purchasing_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_qml.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_qml_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_qmldebug_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_qmldevtools_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_qmltest.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_qmltest_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_qtmultimediaquicktools_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_quick.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_quick_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_quickcontrols2.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_quickcontrols2_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_quickparticles_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_quicktemplates2_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_quickwidgets.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_quickwidgets_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_script.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_script_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_scripttools.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_scripttools_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_scxml.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_scxml_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_sensors.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_sensors_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_serialbus.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_serialbus_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_serialport.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_serialport_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_sql.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_sql_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_svg.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_svg_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_testlib.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_testlib_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_uiplugin.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_uitools.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_uitools_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_webchannel.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_webchannel_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_websockets.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_websockets_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_widgets.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_widgets_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_winextras.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_winextras_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_xml.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_xml_private.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_xmlpatterns.pri ..\..\5.7\mingw53_32\mkspecs\modules\qt_lib_xmlpatterns_private.pri ..\..\5.7\mingw53_32\mkspecs\features\qt_functions.prf ..\..\5.7\mingw53_32\mkspecs\features\qt_config.prf ..\..\5.7\mingw53_32\mkspecs\features\win32\qt_config.prf ..\..\5.7\mingw53_32\mkspecs\win32-g++\qmake.conf ..\..\5.7\mingw53_32\mkspecs\features\spec_post.prf .qmake.stash ..\..\5.7\mingw53_32\mkspecs\features\exclusive_builds.prf ..\..\5.7\mingw53_32\mkspecs\features\toolchain.prf ..\..\5.7\mingw53_32\mkspecs\features\default_pre.prf ..\..\5.7\mingw53_32\mkspecs\features\win32\default_pre.prf ..\..\5.7\mingw53_32\mkspecs\features\resolve_config.prf ..\..\5.7\mingw53_32\mkspecs\features\exclusive_builds_post.prf ..\..\5.7\mingw53_32\mkspecs\features\default_post.prf ..\..\5.7\mingw53_32\mkspecs\features\build_pass.prf ..\..\5.7\mingw53_32\mkspecs\features\win32\rtti.prf ..\..\5.7\mingw53_32\mkspecs\features\precompile_header.prf ..\..\5.7\mingw53_32\mkspecs\features\warn_on.prf ..\..\5.7\mingw53_32\mkspecs\features\qt.prf ..\..\5.7\mingw53_32\mkspecs\features\resources.prf ..\..\5.7\mingw53_32\mkspecs\features\moc.prf ..\..\5.7\mingw53_32\mkspecs\features\win32\opengl.prf ..\..\5.7\mingw53_32\mkspecs\features\uic.prf ..\..\5.7\mingw53_32\mkspecs\features\file_copies.prf ..\..\5.7\mingw53_32\mkspecs\features\win32\windows.prf ..\..\5.7\mingw53_32\mkspecs\features\testcase_targets.prf ..\..\5.7\mingw53_32\mkspecs\features\exceptions.prf ..\..\5.7\mingw53_32\mkspecs\features\yacc.prf ..\..\5.7\mingw53_32\mkspecs\features\lex.prf bm.pro ..\..\5.7\mingw53_32\lib\qtmaind.prl ..\..\5.7\mingw53_32\lib\Qt5Chartsd.prl ..\..\5.7\mingw53_32\lib\Qt5Widgetsd.prl ..\..\5.7\mingw53_32\lib\Qt5Guid.prl ..\..\5.7\mingw53_32\lib\Qt5Sqld.prl ..\..\5.7\mingw53_32\lib\Qt5Networkd.prl ..\..\5.7\mingw53_32\lib\Qt5Cored.prl  NO_PCH_SOURCES RESOURCES HEADERS SOURCES OBJECTIVE_SOURCES FORMS YACCSOURCES YACCSOURCES LEXSOURCES 
 
 clean: compiler_clean 
 	-$(DEL_FILE) debug\main.o debug\mainwindow.o debug\querywindow.o debug\jschart.o debug\moc_mainwindow.o debug\moc_querywindow.o debug\moc_jschart.o
@@ -356,9 +356,26 @@ debug/moc_mainwindow.cpp: ../../5.7/mingw53_32/include/QtWidgets/QMainWindow \
 		../../5.7/mingw53_32/include/QtSql/qsqlrelationaltablemodel.h \
 		../../5.7/mingw53_32/include/QtSql/qsqltablemodel.h \
 		../../5.7/mingw53_32/include/QtSql/qtsqlversion.h \
+		../../5.7/mingw53_32/include/QtNetwork/QNetworkAccessManager \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkaccessmanager.h \
+		../../5.7/mingw53_32/include/QtNetwork/QSslConfiguration \
+		../../5.7/mingw53_32/include/QtNetwork/qsslconfiguration.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslsocket.h \
+		../../5.7/mingw53_32/include/QtNetwork/qtcpsocket.h \
+		../../5.7/mingw53_32/include/QtNetwork/qabstractsocket.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslerror.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslcertificate.h \
+		../../5.7/mingw53_32/include/QtNetwork/qssl.h \
+		../../5.7/mingw53_32/include/QtCore/QFlags \
+		../../5.7/mingw53_32/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+		../../5.7/mingw53_32/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+		../../5.7/mingw53_32/include/QtCore/QtGlobal \
+		../../5.7/mingw53_32/include/QtCore/QString \
+		../../5.7/mingw53_32/include/QtCore/QSharedDataPointer \
+		../../5.7/mingw53_32/include/QtCore/QMetaType \
 		mainwindow.h \
 		../../5.7/mingw53_32/bin/moc.exe
-	C:\Qt\5.7\mingw53_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/5.7/mingw53_32/mkspecs/win32-g++ -IC:/Qt/workspace/bm -IC:/Qt/5.7/mingw53_32/include -IC:/Qt/5.7/mingw53_32/include/QtCharts -IC:/Qt/5.7/mingw53_32/include/QtWidgets -IC:/Qt/5.7/mingw53_32/include/QtGui -IC:/Qt/5.7/mingw53_32/include/QtANGLE -IC:/Qt/5.7/mingw53_32/include/QtSql -IC:/Qt/5.7/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward mainwindow.h -o debug\moc_mainwindow.cpp
+	C:\Qt\5.7\mingw53_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/5.7/mingw53_32/mkspecs/win32-g++ -IC:/Qt/workspace/bm -IC:/Qt/5.7/mingw53_32/include -IC:/Qt/5.7/mingw53_32/include/QtCharts -IC:/Qt/5.7/mingw53_32/include/QtWidgets -IC:/Qt/5.7/mingw53_32/include/QtGui -IC:/Qt/5.7/mingw53_32/include/QtANGLE -IC:/Qt/5.7/mingw53_32/include/QtSql -IC:/Qt/5.7/mingw53_32/include/QtNetwork -IC:/Qt/5.7/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward mainwindow.h -o debug\moc_mainwindow.cpp
 
 debug/moc_querywindow.cpp: ../../5.7/mingw53_32/include/QtWidgets/QDialog \
 		../../5.7/mingw53_32/include/QtWidgets/qdialog.h \
@@ -486,9 +503,11 @@ debug/moc_querywindow.cpp: ../../5.7/mingw53_32/include/QtWidgets/QDialog \
 		../../5.7/mingw53_32/include/QtSql/qsqlrecord.h \
 		../../5.7/mingw53_32/include/QtWidgets/QHeaderView \
 		../../5.7/mingw53_32/include/QtWidgets/qheaderview.h \
+		../../5.7/mingw53_32/include/QtCore/QDate \
+		../../5.7/mingw53_32/include/QtCore/qdatetime.h \
 		querywindow.h \
 		../../5.7/mingw53_32/bin/moc.exe
-	C:\Qt\5.7\mingw53_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/5.7/mingw53_32/mkspecs/win32-g++ -IC:/Qt/workspace/bm -IC:/Qt/5.7/mingw53_32/include -IC:/Qt/5.7/mingw53_32/include/QtCharts -IC:/Qt/5.7/mingw53_32/include/QtWidgets -IC:/Qt/5.7/mingw53_32/include/QtGui -IC:/Qt/5.7/mingw53_32/include/QtANGLE -IC:/Qt/5.7/mingw53_32/include/QtSql -IC:/Qt/5.7/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward querywindow.h -o debug\moc_querywindow.cpp
+	C:\Qt\5.7\mingw53_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/5.7/mingw53_32/mkspecs/win32-g++ -IC:/Qt/workspace/bm -IC:/Qt/5.7/mingw53_32/include -IC:/Qt/5.7/mingw53_32/include/QtCharts -IC:/Qt/5.7/mingw53_32/include/QtWidgets -IC:/Qt/5.7/mingw53_32/include/QtGui -IC:/Qt/5.7/mingw53_32/include/QtANGLE -IC:/Qt/5.7/mingw53_32/include/QtSql -IC:/Qt/5.7/mingw53_32/include/QtNetwork -IC:/Qt/5.7/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward querywindow.h -o debug\moc_querywindow.cpp
 
 debug/moc_jschart.cpp: ../../5.7/mingw53_32/include/QtWidgets/QDialog \
 		../../5.7/mingw53_32/include/QtWidgets/qdialog.h \
@@ -1010,9 +1029,12 @@ debug/moc_jschart.cpp: ../../5.7/mingw53_32/include/QtWidgets/QDialog \
 		../../5.7/mingw53_32/include/QtCharts/qpercentbarseries.h \
 		../../5.7/mingw53_32/include/QtCharts/qstackedbarseries.h \
 		../../5.7/mingw53_32/include/QtCharts/qtchartsversion.h \
+		../../5.7/mingw53_32/include/QtCore/QDateTime \
+		../../5.7/mingw53_32/include/QtCharts/QDateTimeAxis \
+		../../5.7/mingw53_32/include/QtCharts/QLineSeries \
 		jschart.h \
 		../../5.7/mingw53_32/bin/moc.exe
-	C:\Qt\5.7\mingw53_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/5.7/mingw53_32/mkspecs/win32-g++ -IC:/Qt/workspace/bm -IC:/Qt/5.7/mingw53_32/include -IC:/Qt/5.7/mingw53_32/include/QtCharts -IC:/Qt/5.7/mingw53_32/include/QtWidgets -IC:/Qt/5.7/mingw53_32/include/QtGui -IC:/Qt/5.7/mingw53_32/include/QtANGLE -IC:/Qt/5.7/mingw53_32/include/QtSql -IC:/Qt/5.7/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward jschart.h -o debug\moc_jschart.cpp
+	C:\Qt\5.7\mingw53_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/5.7/mingw53_32/mkspecs/win32-g++ -IC:/Qt/workspace/bm -IC:/Qt/5.7/mingw53_32/include -IC:/Qt/5.7/mingw53_32/include/QtCharts -IC:/Qt/5.7/mingw53_32/include/QtWidgets -IC:/Qt/5.7/mingw53_32/include/QtGui -IC:/Qt/5.7/mingw53_32/include/QtANGLE -IC:/Qt/5.7/mingw53_32/include/QtSql -IC:/Qt/5.7/mingw53_32/include/QtNetwork -IC:/Qt/5.7/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward jschart.h -o debug\moc_jschart.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
@@ -1293,6 +1315,23 @@ debug/main.o: main.cpp mainwindow.h \
 		../../5.7/mingw53_32/include/QtSql/qsqlrelationaltablemodel.h \
 		../../5.7/mingw53_32/include/QtSql/qsqltablemodel.h \
 		../../5.7/mingw53_32/include/QtSql/qtsqlversion.h \
+		../../5.7/mingw53_32/include/QtNetwork/QNetworkAccessManager \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkaccessmanager.h \
+		../../5.7/mingw53_32/include/QtNetwork/QSslConfiguration \
+		../../5.7/mingw53_32/include/QtNetwork/qsslconfiguration.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslsocket.h \
+		../../5.7/mingw53_32/include/QtNetwork/qtcpsocket.h \
+		../../5.7/mingw53_32/include/QtNetwork/qabstractsocket.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslerror.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslcertificate.h \
+		../../5.7/mingw53_32/include/QtNetwork/qssl.h \
+		../../5.7/mingw53_32/include/QtCore/QFlags \
+		../../5.7/mingw53_32/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+		../../5.7/mingw53_32/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+		../../5.7/mingw53_32/include/QtCore/QtGlobal \
+		../../5.7/mingw53_32/include/QtCore/QString \
+		../../5.7/mingw53_32/include/QtCore/QSharedDataPointer \
+		../../5.7/mingw53_32/include/QtCore/QMetaType \
 		../../5.7/mingw53_32/include/QtWidgets/QApplication \
 		../../5.7/mingw53_32/include/QtWidgets/qapplication.h \
 		../../5.7/mingw53_32/include/QtWidgets/qdesktopwidget.h \
@@ -1550,6 +1589,23 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../5.7/mingw53_32/include/QtSql/qsqlrelationaltablemodel.h \
 		../../5.7/mingw53_32/include/QtSql/qsqltablemodel.h \
 		../../5.7/mingw53_32/include/QtSql/qtsqlversion.h \
+		../../5.7/mingw53_32/include/QtNetwork/QNetworkAccessManager \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkaccessmanager.h \
+		../../5.7/mingw53_32/include/QtNetwork/QSslConfiguration \
+		../../5.7/mingw53_32/include/QtNetwork/qsslconfiguration.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslsocket.h \
+		../../5.7/mingw53_32/include/QtNetwork/qtcpsocket.h \
+		../../5.7/mingw53_32/include/QtNetwork/qabstractsocket.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslerror.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslcertificate.h \
+		../../5.7/mingw53_32/include/QtNetwork/qssl.h \
+		../../5.7/mingw53_32/include/QtCore/QFlags \
+		../../5.7/mingw53_32/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+		../../5.7/mingw53_32/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+		../../5.7/mingw53_32/include/QtCore/QtGlobal \
+		../../5.7/mingw53_32/include/QtCore/QString \
+		../../5.7/mingw53_32/include/QtCore/QSharedDataPointer \
+		../../5.7/mingw53_32/include/QtCore/QMetaType \
 		ui_mainwindow.h \
 		../../5.7/mingw53_32/include/QtCore/QVariant \
 		../../5.7/mingw53_32/include/QtWidgets/QAction \
@@ -1564,6 +1620,10 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../5.7/mingw53_32/include/QtWidgets/qbuttongroup.h \
 		../../5.7/mingw53_32/include/QtWidgets/QHeaderView \
 		../../5.7/mingw53_32/include/QtWidgets/qheaderview.h \
+		../../5.7/mingw53_32/include/QtWidgets/QLCDNumber \
+		../../5.7/mingw53_32/include/QtWidgets/qlcdnumber.h \
+		../../5.7/mingw53_32/include/QtWidgets/QLabel \
+		../../5.7/mingw53_32/include/QtWidgets/qlabel.h \
 		../../5.7/mingw53_32/include/QtWidgets/QMenuBar \
 		../../5.7/mingw53_32/include/QtWidgets/qmenubar.h \
 		../../5.7/mingw53_32/include/QtWidgets/qmenu.h \
@@ -1577,6 +1637,7 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../5.7/mingw53_32/include/QtWidgets/QTableWidget \
 		../../5.7/mingw53_32/include/QtWidgets/qtablewidget.h \
 		../../5.7/mingw53_32/include/QtWidgets/qtableview.h \
+		../../5.7/mingw53_32/include/QtCore/QDate \
 		jschart.h \
 		../../5.7/mingw53_32/include/QtCharts/QtCharts \
 		../../5.7/mingw53_32/include/QtCharts/QtChartsDepends \
@@ -1647,7 +1708,6 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../5.7/mingw53_32/include/QtGui/qopenglframebufferobject.h \
 		../../5.7/mingw53_32/include/QtGui/qopenglpaintdevice.h \
 		../../5.7/mingw53_32/include/QtGui/qopenglpixeltransferoptions.h \
-		../../5.7/mingw53_32/include/QtCore/QSharedDataPointer \
 		../../5.7/mingw53_32/include/QtGui/qopenglshaderprogram.h \
 		../../5.7/mingw53_32/include/QtGui/qopengltexture.h \
 		../../5.7/mingw53_32/include/QtGui/qopengltimerquery.h \
@@ -1744,7 +1804,6 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../5.7/mingw53_32/include/QtCore/QPointF \
 		../../5.7/mingw53_32/include/QtWidgets/QScrollerProperties \
 		../../5.7/mingw53_32/include/QtWidgets/qscrollerproperties.h \
-		../../5.7/mingw53_32/include/QtCore/QMetaType \
 		../../5.7/mingw53_32/include/QtWidgets/qsystemtrayicon.h \
 		../../5.7/mingw53_32/include/QtWidgets/qundogroup.h \
 		../../5.7/mingw53_32/include/QtWidgets/qundostack.h \
@@ -1760,8 +1819,6 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../5.7/mingw53_32/include/QtWidgets/qfontcombobox.h \
 		../../5.7/mingw53_32/include/QtWidgets/qgroupbox.h \
 		../../5.7/mingw53_32/include/QtWidgets/qkeysequenceedit.h \
-		../../5.7/mingw53_32/include/QtWidgets/qlabel.h \
-		../../5.7/mingw53_32/include/QtWidgets/qlcdnumber.h \
 		../../5.7/mingw53_32/include/QtWidgets/qmdiarea.h \
 		../../5.7/mingw53_32/include/QtWidgets/qmdisubwindow.h \
 		../../5.7/mingw53_32/include/QtWidgets/qplaintextedit.h \
@@ -1784,7 +1841,6 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../5.7/mingw53_32/include/QtCharts/qabstractseries.h \
 		../../5.7/mingw53_32/include/QtCharts/QChartGlobal \
 		../../5.7/mingw53_32/include/QtCharts/qchartglobal.h \
-		../../5.7/mingw53_32/include/QtCore/QtGlobal \
 		../../5.7/mingw53_32/include/QtCharts/QAbstractAxis \
 		../../5.7/mingw53_32/include/QtCharts/qabstractaxis.h \
 		../../5.7/mingw53_32/include/QtGui/QPen \
@@ -1852,7 +1908,10 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../5.7/mingw53_32/include/QtCharts/qbarseries.h \
 		../../5.7/mingw53_32/include/QtCharts/qpercentbarseries.h \
 		../../5.7/mingw53_32/include/QtCharts/qstackedbarseries.h \
-		../../5.7/mingw53_32/include/QtCharts/qtchartsversion.h
+		../../5.7/mingw53_32/include/QtCharts/qtchartsversion.h \
+		../../5.7/mingw53_32/include/QtCore/QDateTime \
+		../../5.7/mingw53_32/include/QtCharts/QDateTimeAxis \
+		../../5.7/mingw53_32/include/QtCharts/QLineSeries
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o mainwindow.cpp
 
 debug/querywindow.o: querywindow.cpp querywindow.h \
@@ -1982,6 +2041,8 @@ debug/querywindow.o: querywindow.cpp querywindow.h \
 		../../5.7/mingw53_32/include/QtSql/qsqlrecord.h \
 		../../5.7/mingw53_32/include/QtWidgets/QHeaderView \
 		../../5.7/mingw53_32/include/QtWidgets/qheaderview.h \
+		../../5.7/mingw53_32/include/QtCore/QDate \
+		../../5.7/mingw53_32/include/QtCore/qdatetime.h \
 		ui_querywindow.h \
 		../../5.7/mingw53_32/include/QtCore/QVariant \
 		../../5.7/mingw53_32/include/QtWidgets/QAction \
@@ -2027,7 +2088,6 @@ debug/querywindow.o: querywindow.cpp querywindow.h \
 		../../5.7/mingw53_32/include/QtCore/qtextcodec.h \
 		../../5.7/mingw53_32/include/QtCore/qendian.h \
 		../../5.7/mingw53_32/include/QtCore/qlibraryinfo.h \
-		../../5.7/mingw53_32/include/QtCore/qdatetime.h \
 		../../5.7/mingw53_32/include/QtCore/qbuffer.h \
 		../../5.7/mingw53_32/include/QtCore/qdir.h \
 		../../5.7/mingw53_32/include/QtCore/qfileinfo.h \
@@ -2132,7 +2192,24 @@ debug/querywindow.o: querywindow.cpp querywindow.h \
 		../../5.7/mingw53_32/include/QtWidgets/qcombobox.h \
 		../../5.7/mingw53_32/include/QtSql/qsqlrelationaltablemodel.h \
 		../../5.7/mingw53_32/include/QtSql/qsqltablemodel.h \
-		../../5.7/mingw53_32/include/QtSql/qtsqlversion.h
+		../../5.7/mingw53_32/include/QtSql/qtsqlversion.h \
+		../../5.7/mingw53_32/include/QtNetwork/QNetworkAccessManager \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkaccessmanager.h \
+		../../5.7/mingw53_32/include/QtNetwork/QSslConfiguration \
+		../../5.7/mingw53_32/include/QtNetwork/qsslconfiguration.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslsocket.h \
+		../../5.7/mingw53_32/include/QtNetwork/qtcpsocket.h \
+		../../5.7/mingw53_32/include/QtNetwork/qabstractsocket.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslerror.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslcertificate.h \
+		../../5.7/mingw53_32/include/QtNetwork/qssl.h \
+		../../5.7/mingw53_32/include/QtCore/QFlags \
+		../../5.7/mingw53_32/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+		../../5.7/mingw53_32/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+		../../5.7/mingw53_32/include/QtCore/QtGlobal \
+		../../5.7/mingw53_32/include/QtCore/QString \
+		../../5.7/mingw53_32/include/QtCore/QSharedDataPointer \
+		../../5.7/mingw53_32/include/QtCore/QMetaType
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\querywindow.o querywindow.cpp
 
 debug/jschart.o: jschart.cpp jschart.h \
@@ -2656,6 +2733,9 @@ debug/jschart.o: jschart.cpp jschart.h \
 		../../5.7/mingw53_32/include/QtCharts/qpercentbarseries.h \
 		../../5.7/mingw53_32/include/QtCharts/qstackedbarseries.h \
 		../../5.7/mingw53_32/include/QtCharts/qtchartsversion.h \
+		../../5.7/mingw53_32/include/QtCore/QDateTime \
+		../../5.7/mingw53_32/include/QtCharts/QDateTimeAxis \
+		../../5.7/mingw53_32/include/QtCharts/QLineSeries \
 		ui_jschart.h \
 		../../5.7/mingw53_32/include/QtWidgets/QAction \
 		../../5.7/mingw53_32/include/QtWidgets/QApplication \
@@ -2683,7 +2763,21 @@ debug/jschart.o: jschart.cpp jschart.h \
 		../../5.7/mingw53_32/include/QtSql/qsqlrelationaldelegate.h \
 		../../5.7/mingw53_32/include/QtSql/qsqlrelationaltablemodel.h \
 		../../5.7/mingw53_32/include/QtSql/qsqltablemodel.h \
-		../../5.7/mingw53_32/include/QtSql/qtsqlversion.h
+		../../5.7/mingw53_32/include/QtSql/qtsqlversion.h \
+		../../5.7/mingw53_32/include/QtNetwork/QNetworkAccessManager \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkaccessmanager.h \
+		../../5.7/mingw53_32/include/QtNetwork/QSslConfiguration \
+		../../5.7/mingw53_32/include/QtNetwork/qsslconfiguration.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslsocket.h \
+		../../5.7/mingw53_32/include/QtNetwork/qtcpsocket.h \
+		../../5.7/mingw53_32/include/QtNetwork/qabstractsocket.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslerror.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslcertificate.h \
+		../../5.7/mingw53_32/include/QtNetwork/qssl.h \
+		../../5.7/mingw53_32/include/QtCore/QFlags \
+		../../5.7/mingw53_32/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+		../../5.7/mingw53_32/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+		../../5.7/mingw53_32/include/QtCore/QString
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\jschart.o jschart.cpp
 
 debug/moc_mainwindow.o: debug/moc_mainwindow.cpp 

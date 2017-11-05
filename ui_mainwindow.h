@@ -14,6 +14,8 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLCDNumber>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
@@ -28,6 +30,8 @@ public:
     QPushButton *pushButton;
     QPushButton *pushButton_2;
     QPushButton *pushButton_3;
+    QLabel *bitocoincourse;
+    QLCDNumber *course_dig;
     QMenuBar *menuBar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -60,6 +64,12 @@ public:
         pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
         pushButton_3->setGeometry(QRect(540, 390, 240, 75));
         pushButton_3->setFont(font);
+        bitocoincourse = new QLabel(centralWidget);
+        bitocoincourse->setObjectName(QStringLiteral("bitocoincourse"));
+        bitocoincourse->setGeometry(QRect(20, 20, 341, 61));
+        course_dig = new QLCDNumber(centralWidget);
+        course_dig->setObjectName(QStringLiteral("course_dig"));
+        course_dig->setGeometry(QRect(380, 20, 201, 61));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -80,6 +90,7 @@ public:
         pushButton->setText(QApplication::translate("MainWindow", "Connect to the database", Q_NULLPTR));
         pushButton_2->setText(QApplication::translate("MainWindow", "Check the database", Q_NULLPTR));
         pushButton_3->setText(QApplication::translate("MainWindow", "Draw a chart", Q_NULLPTR));
+        bitocoincourse->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:20pt;\">Current bitcoin course:</span></p></body></html>", Q_NULLPTR));
     } // retranslateUi
 
 };
