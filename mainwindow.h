@@ -8,6 +8,9 @@
 #include <QSqlRecord>
 #include <QtSql>
 #include <QNetworkAccessManager>
+#include <QtNetwork>
+#include <QNetworkRequest>
+
 
 //global variables
 extern QSqlQuery queryshare;
@@ -25,7 +28,7 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     QSqlDatabase db;
-    //QDate transport[1000];
+    void saveJson(QJsonDocument document, QString fileName);
 
 
 
@@ -42,19 +45,20 @@ private slots:
     void on_pushButton_clicked();
     void paintEvent(QPaintEvent *);
     void on_pushButton_2_clicked();
-
+    void urlRead();
+    void urlFinished();
     void on_pushButton_3_clicked();
 
 private:
     bool drawShapes=0;
-
+    QByteArray buffer;
+    QNetworkReply *reply;
 
 
 
     Ui::MainWindow *ui;
 
 };
-
 
 
 

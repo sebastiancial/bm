@@ -12,9 +12,30 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
 
-
     ui->setupUi(this);
     this->setWindowTitle("Bitcoin Manager");
+    //geting json to display
+    QNetworkRequest request(QUrl("http://api.coindesk.com/v1/bpi/currentprice.json"));
+    //QNetworkRequest request(QUrl("http://api.blockchain.info/charts/market-price?format=json"));
+    request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
+    QNetworkAccessManager *manager = new QNetworkAccessManager(this);
+    reply = manager->get(request);
+
+    //QEventLoop loop;
+    //connect(reply, SIGNAL(finished()), &loop, SLOT(quit()));
+    //loop.exec();
+
+    connect(reply, SIGNAL(readyRead()), this, SLOT(urlRead()));
+    connect(reply, SIGNAL(finished()), this, SLOT(urlFinished()));
+
+    //QByteArray data = reply->readAll();
+    //QString dataReply(data);
+    //QJsonDocument doc = QJsonDocument::fromJson(dataReply.toUtf8());
+    //qDebug()<<doc;
+
+    // FIXME for debug
+    //qDebug() << "Sync" << QString::fromUtf8(data.data(), data.size());
+
 
 }
 
@@ -104,4 +125,25 @@ void MainWindow::on_pushButton_3_clicked()
     chart =new jschart();
     chart->show();
 
+}
+
+void MainWindow::urlRead()
+{
+    buffer += reply->readAll();
+}
+
+void MainWindow::urlFinished()
+{
+    QString data(buffer);
+    //ui->textBrowser->setText(data);
+    QJsonDocument doc = QJsonDocument::fromJson(data.toUtf8());
+    qDebug()<<doc;
+    saveJson(doc,QString("json_btc"));
+}
+
+void MainWindow::saveJson(QJsonDocument document, QString fileName)
+{
+    QFile jsonFile(QString("./json/")+fileName);
+    jsonFile.open(QFile::WriteOnly);
+    jsonFile.write(document.toJson());
 }
