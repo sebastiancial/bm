@@ -7,6 +7,7 @@
 #include <QSqlDatabase>
 #include <QSqlRecord>
 #include <QtSql>
+
 #include <QNetworkAccessManager>
 #include <QtNetwork>
 #include <QNetworkRequest>
@@ -28,7 +29,6 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     QSqlDatabase db;
-    void saveJson(QJsonDocument document, QString fileName);
 
 
 
@@ -47,12 +47,14 @@ private slots:
     void on_pushButton_2_clicked();
     void urlRead();
     void urlFinished();
-    void on_pushButton_3_clicked();
+    void on_pushButton_3_clicked(); 
+    void saveJson(QJsonDocument document, QString fileName);
 
 private:
     bool drawShapes=0;
     QByteArray buffer;
     QNetworkReply *reply;
+    QJsonDocument jsondoc;
 
 
 

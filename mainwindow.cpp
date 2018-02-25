@@ -14,27 +14,38 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->setupUi(this);
     this->setWindowTitle("Bitcoin Manager");
-    //geting json to display
+
+
+    //geting json to file
+
     QNetworkRequest request(QUrl("http://api.coindesk.com/v1/bpi/currentprice.json"));
     //QNetworkRequest request(QUrl("http://api.blockchain.info/charts/market-price?format=json"));
     request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
     QNetworkAccessManager *manager = new QNetworkAccessManager(this);
     reply = manager->get(request);
 
-    //QEventLoop loop;
-    //connect(reply, SIGNAL(finished()), &loop, SLOT(quit()));
-    //loop.exec();
-
     connect(reply, SIGNAL(readyRead()), this, SLOT(urlRead()));
     connect(reply, SIGNAL(finished()), this, SLOT(urlFinished()));
 
-    //QByteArray data = reply->readAll();
-    //QString dataReply(data);
-    //QJsonDocument doc = QJsonDocument::fromJson(dataReply.toUtf8());
-    //qDebug()<<doc;
+    //using json file to display
 
-    // FIXME for debug
-    //qDebug() << "Sync" << QString::fromUtf8(data.data(), data.size());
+    QFile jsonFile(QString("./json/json_btc.json"));
+    jsonFile.open(QFile::ReadOnly);
+    QByteArray jsonall = jsonFile.readAll();
+    jsonFile.close();
+
+    QJsonDocument jsontemp = QJsonDocument::fromJson(jsonall);
+    QJsonObject rootObject = jsontemp.object();
+    QJsonValue val1 = rootObject.value("bpi");
+    QJsonObject nextlevel = val1.toObject();
+    QJsonValue val2 = nextlevel.value("USD");
+    QJsonObject nextlevel2 = val2.toObject();
+    QJsonValue val3 = nextlevel2.value("rate_float");
+
+    ui->course_dig->display(val3.toDouble());
+
+    //delete &val3;
+
 
 
 }
@@ -136,9 +147,9 @@ void MainWindow::urlFinished()
 {
     QString data(buffer);
     //ui->textBrowser->setText(data);
-    QJsonDocument doc = QJsonDocument::fromJson(data.toUtf8());
-    qDebug()<<doc;
-    saveJson(doc,QString("json_btc"));
+    jsondoc = QJsonDocument::fromJson(data.toUtf8());
+    qDebug()<<jsondoc;
+    saveJson(jsondoc,QString("json_btc.json"));
 }
 
 void MainWindow::saveJson(QJsonDocument document, QString fileName)
@@ -146,4 +157,5 @@ void MainWindow::saveJson(QJsonDocument document, QString fileName)
     QFile jsonFile(QString("./json/")+fileName);
     jsonFile.open(QFile::WriteOnly);
     jsonFile.write(document.toJson());
+    jsonFile.close();
 }

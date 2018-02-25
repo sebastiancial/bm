@@ -32,6 +32,7 @@ public:
     QPushButton *pushButton_3;
     QLabel *bitocoincourse;
     QLCDNumber *course_dig;
+    QLabel *label;
     QMenuBar *menuBar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -69,7 +70,17 @@ public:
         bitocoincourse->setGeometry(QRect(20, 20, 341, 61));
         course_dig = new QLCDNumber(centralWidget);
         course_dig->setObjectName(QStringLiteral("course_dig"));
-        course_dig->setGeometry(QRect(380, 20, 201, 61));
+        course_dig->setGeometry(QRect(380, 20, 351, 61));
+        course_dig->setLayoutDirection(Qt::RightToLeft);
+        course_dig->setMidLineWidth(0);
+        course_dig->setSmallDecimalPoint(false);
+        course_dig->setDigitCount(10);
+        label = new QLabel(centralWidget);
+        label->setObjectName(QStringLiteral("label"));
+        label->setGeometry(QRect(750, 10, 31, 81));
+        QFont font1;
+        font1.setPointSize(35);
+        label->setFont(font1);
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -91,6 +102,7 @@ public:
         pushButton_2->setText(QApplication::translate("MainWindow", "Check the database", Q_NULLPTR));
         pushButton_3->setText(QApplication::translate("MainWindow", "Draw a chart", Q_NULLPTR));
         bitocoincourse->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:20pt;\">Current bitcoin course:</span></p></body></html>", Q_NULLPTR));
+        label->setText(QApplication::translate("MainWindow", "$", Q_NULLPTR));
     } // retranslateUi
 
 };
