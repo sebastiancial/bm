@@ -15,6 +15,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     this->setWindowTitle("Bitcoin Manager");
 
+    ui->label_2->setPixmap(QPixmap("./images/bitcoin-225079_1280.png"));
+
 
     //geting json to file
 
@@ -29,9 +31,10 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //using json file to display
 
-    QFile jsonFile(QString("./json/json_btc.json"));
+    QFile jsonFile("./json/json_btc.json");
     jsonFile.open(QFile::ReadOnly);
     QByteArray jsonall = jsonFile.readAll();
+
     jsonFile.close();
 
     QJsonDocument jsontemp = QJsonDocument::fromJson(jsonall);
@@ -40,15 +43,13 @@ MainWindow::MainWindow(QWidget *parent) :
     QJsonObject nextlevel = val1.toObject();
     QJsonValue val2 = nextlevel.value("USD");
     QJsonObject nextlevel2 = val2.toObject();
-    QJsonValue val3 = nextlevel2.value("rate_float");
-
-    ui->course_dig->display(val3.toDouble());
-
-    //delete &val3;
+    showvar(nextlevel2.value("rate_float"));
 
 
 
 }
+
+
 
 MainWindow::~MainWindow()
 {
@@ -148,14 +149,31 @@ void MainWindow::urlFinished()
     QString data(buffer);
     //ui->textBrowser->setText(data);
     jsondoc = QJsonDocument::fromJson(data.toUtf8());
-    qDebug()<<jsondoc;
+    qDebug()<<!jsondoc.isEmpty();
+    if (!jsondoc.isEmpty())
+    {
     saveJson(jsondoc,QString("json_btc.json"));
+    }
+
+    QJsonObject rootObject = jsondoc.object();
+    QJsonValue val1 = rootObject.value("bpi");
+    QJsonObject nextlevel = val1.toObject();
+    QJsonValue val2 = nextlevel.value("USD");
+    QJsonObject nextlevel2 = val2.toObject();
+    showvar(nextlevel2.value("rate_float"));
 }
 
 void MainWindow::saveJson(QJsonDocument document, QString fileName)
 {
-    QFile jsonFile(QString("./json/")+fileName);
+    QFile jsonFile("./json/"+fileName);
     jsonFile.open(QFile::WriteOnly);
     jsonFile.write(document.toJson());
     jsonFile.close();
+}
+
+void MainWindow::showvar(QJsonValue val3)
+{
+    double bitvar = val3.toDouble();
+    ui->course_dig->display(bitvar);
+    //qDebug()<<bitvar;
 }

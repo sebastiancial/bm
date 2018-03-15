@@ -25,3 +25,4 @@ FORMS    += mainwindow.ui \
             jschart.ui
 
 DISTFILES +=
+

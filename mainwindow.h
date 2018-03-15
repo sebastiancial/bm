@@ -11,6 +11,7 @@
 #include <QNetworkAccessManager>
 #include <QtNetwork>
 #include <QNetworkRequest>
+#include <QNetworkReply>
 
 
 //global variables
@@ -50,11 +51,18 @@ private slots:
     void on_pushButton_3_clicked(); 
     void saveJson(QJsonDocument document, QString fileName);
 
+
+signals:
+    void sig_var();
+
 private:
     bool drawShapes=0;
     QByteArray buffer;
     QNetworkReply *reply;
     QJsonDocument jsondoc;
+    //double bitvar;
+    void showvar(QJsonValue val3);
+
 
 
 

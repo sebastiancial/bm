@@ -373,6 +373,41 @@ debug/moc_mainwindow.cpp: ../../5.7/mingw53_32/include/QtWidgets/QMainWindow \
 		../../5.7/mingw53_32/include/QtCore/QString \
 		../../5.7/mingw53_32/include/QtCore/QSharedDataPointer \
 		../../5.7/mingw53_32/include/QtCore/QMetaType \
+		../../5.7/mingw53_32/include/QtNetwork/QtNetwork \
+		../../5.7/mingw53_32/include/QtNetwork/QtNetworkDepends \
+		../../5.7/mingw53_32/include/QtNetwork/qabstractnetworkcache.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkrequest.h \
+		../../5.7/mingw53_32/include/QtCore/QUrl \
+		../../5.7/mingw53_32/include/QtCore/QVariant \
+		../../5.7/mingw53_32/include/QtNetwork/qhttpmultipart.h \
+		../../5.7/mingw53_32/include/QtCore/QByteArray \
+		../../5.7/mingw53_32/include/QtCore/QIODevice \
+		../../5.7/mingw53_32/include/QtNetwork/QNetworkRequest \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkcookie.h \
+		../../5.7/mingw53_32/include/QtCore/QList \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkcookiejar.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkdiskcache.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkreply.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkconfigmanager.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkconfiguration.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworksession.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkinterface.h \
+		../../5.7/mingw53_32/include/QtNetwork/qhostaddress.h \
+		../../5.7/mingw53_32/include/QtNetwork/qauthenticator.h \
+		../../5.7/mingw53_32/include/QtNetwork/qdnslookup.h \
+		../../5.7/mingw53_32/include/QtNetwork/qhostinfo.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkproxy.h \
+		../../5.7/mingw53_32/include/QtNetwork/qlocalserver.h \
+		../../5.7/mingw53_32/include/QtNetwork/qlocalsocket.h \
+		../../5.7/mingw53_32/include/QtNetwork/qtcpserver.h \
+		../../5.7/mingw53_32/include/QtNetwork/qudpsocket.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslcertificateextension.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslcipher.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslellipticcurve.h \
+		../../5.7/mingw53_32/include/QtCore/QHash \
+		../../5.7/mingw53_32/include/QtNetwork/qsslkey.h \
+		../../5.7/mingw53_32/include/QtNetwork/qtnetworkversion.h \
+		../../5.7/mingw53_32/include/QtNetwork/QNetworkReply \
 		mainwindow.h \
 		../../5.7/mingw53_32/bin/moc.exe
 	C:\Qt\5.7\mingw53_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/5.7/mingw53_32/mkspecs/win32-g++ -IC:/Qt/workspace/bm -IC:/Qt/5.7/mingw53_32/include -IC:/Qt/5.7/mingw53_32/include/QtCharts -IC:/Qt/5.7/mingw53_32/include/QtWidgets -IC:/Qt/5.7/mingw53_32/include/QtGui -IC:/Qt/5.7/mingw53_32/include/QtANGLE -IC:/Qt/5.7/mingw53_32/include/QtSql -IC:/Qt/5.7/mingw53_32/include/QtNetwork -IC:/Qt/5.7/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward mainwindow.h -o debug\moc_mainwindow.cpp
@@ -1332,6 +1367,41 @@ debug/main.o: main.cpp mainwindow.h \
 		../../5.7/mingw53_32/include/QtCore/QString \
 		../../5.7/mingw53_32/include/QtCore/QSharedDataPointer \
 		../../5.7/mingw53_32/include/QtCore/QMetaType \
+		../../5.7/mingw53_32/include/QtNetwork/QtNetwork \
+		../../5.7/mingw53_32/include/QtNetwork/QtNetworkDepends \
+		../../5.7/mingw53_32/include/QtNetwork/qabstractnetworkcache.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkrequest.h \
+		../../5.7/mingw53_32/include/QtCore/QUrl \
+		../../5.7/mingw53_32/include/QtCore/QVariant \
+		../../5.7/mingw53_32/include/QtNetwork/qhttpmultipart.h \
+		../../5.7/mingw53_32/include/QtCore/QByteArray \
+		../../5.7/mingw53_32/include/QtCore/QIODevice \
+		../../5.7/mingw53_32/include/QtNetwork/QNetworkRequest \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkcookie.h \
+		../../5.7/mingw53_32/include/QtCore/QList \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkcookiejar.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkdiskcache.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkreply.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkconfigmanager.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkconfiguration.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworksession.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkinterface.h \
+		../../5.7/mingw53_32/include/QtNetwork/qhostaddress.h \
+		../../5.7/mingw53_32/include/QtNetwork/qauthenticator.h \
+		../../5.7/mingw53_32/include/QtNetwork/qdnslookup.h \
+		../../5.7/mingw53_32/include/QtNetwork/qhostinfo.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkproxy.h \
+		../../5.7/mingw53_32/include/QtNetwork/qlocalserver.h \
+		../../5.7/mingw53_32/include/QtNetwork/qlocalsocket.h \
+		../../5.7/mingw53_32/include/QtNetwork/qtcpserver.h \
+		../../5.7/mingw53_32/include/QtNetwork/qudpsocket.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslcertificateextension.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslcipher.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslellipticcurve.h \
+		../../5.7/mingw53_32/include/QtCore/QHash \
+		../../5.7/mingw53_32/include/QtNetwork/qsslkey.h \
+		../../5.7/mingw53_32/include/QtNetwork/qtnetworkversion.h \
+		../../5.7/mingw53_32/include/QtNetwork/QNetworkReply \
 		../../5.7/mingw53_32/include/QtWidgets/QApplication \
 		../../5.7/mingw53_32/include/QtWidgets/qapplication.h \
 		../../5.7/mingw53_32/include/QtWidgets/qdesktopwidget.h \
@@ -1606,8 +1676,42 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../5.7/mingw53_32/include/QtCore/QString \
 		../../5.7/mingw53_32/include/QtCore/QSharedDataPointer \
 		../../5.7/mingw53_32/include/QtCore/QMetaType \
-		ui_mainwindow.h \
+		../../5.7/mingw53_32/include/QtNetwork/QtNetwork \
+		../../5.7/mingw53_32/include/QtNetwork/QtNetworkDepends \
+		../../5.7/mingw53_32/include/QtNetwork/qabstractnetworkcache.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkrequest.h \
+		../../5.7/mingw53_32/include/QtCore/QUrl \
 		../../5.7/mingw53_32/include/QtCore/QVariant \
+		../../5.7/mingw53_32/include/QtNetwork/qhttpmultipart.h \
+		../../5.7/mingw53_32/include/QtCore/QByteArray \
+		../../5.7/mingw53_32/include/QtCore/QIODevice \
+		../../5.7/mingw53_32/include/QtNetwork/QNetworkRequest \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkcookie.h \
+		../../5.7/mingw53_32/include/QtCore/QList \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkcookiejar.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkdiskcache.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkreply.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkconfigmanager.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkconfiguration.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworksession.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkinterface.h \
+		../../5.7/mingw53_32/include/QtNetwork/qhostaddress.h \
+		../../5.7/mingw53_32/include/QtNetwork/qauthenticator.h \
+		../../5.7/mingw53_32/include/QtNetwork/qdnslookup.h \
+		../../5.7/mingw53_32/include/QtNetwork/qhostinfo.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkproxy.h \
+		../../5.7/mingw53_32/include/QtNetwork/qlocalserver.h \
+		../../5.7/mingw53_32/include/QtNetwork/qlocalsocket.h \
+		../../5.7/mingw53_32/include/QtNetwork/qtcpserver.h \
+		../../5.7/mingw53_32/include/QtNetwork/qudpsocket.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslcertificateextension.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslcipher.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslellipticcurve.h \
+		../../5.7/mingw53_32/include/QtCore/QHash \
+		../../5.7/mingw53_32/include/QtNetwork/qsslkey.h \
+		../../5.7/mingw53_32/include/QtNetwork/qtnetworkversion.h \
+		../../5.7/mingw53_32/include/QtNetwork/QNetworkReply \
+		ui_mainwindow.h \
 		../../5.7/mingw53_32/include/QtWidgets/QAction \
 		../../5.7/mingw53_32/include/QtWidgets/qaction.h \
 		../../5.7/mingw53_32/include/QtWidgets/qactiongroup.h \
@@ -1690,7 +1794,6 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../5.7/mingw53_32/include/QtGui/QImage \
 		../../5.7/mingw53_32/include/QtGui/qrasterwindow.h \
 		../../5.7/mingw53_32/include/QtGui/qscreen.h \
-		../../5.7/mingw53_32/include/QtCore/QList \
 		../../5.7/mingw53_32/include/QtCore/QSize \
 		../../5.7/mingw53_32/include/QtCore/QSizeF \
 		../../5.7/mingw53_32/include/QtGui/QTransform \
@@ -2209,7 +2312,41 @@ debug/querywindow.o: querywindow.cpp querywindow.h \
 		../../5.7/mingw53_32/include/QtCore/QtGlobal \
 		../../5.7/mingw53_32/include/QtCore/QString \
 		../../5.7/mingw53_32/include/QtCore/QSharedDataPointer \
-		../../5.7/mingw53_32/include/QtCore/QMetaType
+		../../5.7/mingw53_32/include/QtCore/QMetaType \
+		../../5.7/mingw53_32/include/QtNetwork/QtNetwork \
+		../../5.7/mingw53_32/include/QtNetwork/QtNetworkDepends \
+		../../5.7/mingw53_32/include/QtNetwork/qabstractnetworkcache.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkrequest.h \
+		../../5.7/mingw53_32/include/QtCore/QUrl \
+		../../5.7/mingw53_32/include/QtNetwork/qhttpmultipart.h \
+		../../5.7/mingw53_32/include/QtCore/QByteArray \
+		../../5.7/mingw53_32/include/QtCore/QIODevice \
+		../../5.7/mingw53_32/include/QtNetwork/QNetworkRequest \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkcookie.h \
+		../../5.7/mingw53_32/include/QtCore/QList \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkcookiejar.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkdiskcache.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkreply.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkconfigmanager.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkconfiguration.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworksession.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkinterface.h \
+		../../5.7/mingw53_32/include/QtNetwork/qhostaddress.h \
+		../../5.7/mingw53_32/include/QtNetwork/qauthenticator.h \
+		../../5.7/mingw53_32/include/QtNetwork/qdnslookup.h \
+		../../5.7/mingw53_32/include/QtNetwork/qhostinfo.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkproxy.h \
+		../../5.7/mingw53_32/include/QtNetwork/qlocalserver.h \
+		../../5.7/mingw53_32/include/QtNetwork/qlocalsocket.h \
+		../../5.7/mingw53_32/include/QtNetwork/qtcpserver.h \
+		../../5.7/mingw53_32/include/QtNetwork/qudpsocket.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslcertificateextension.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslcipher.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslellipticcurve.h \
+		../../5.7/mingw53_32/include/QtCore/QHash \
+		../../5.7/mingw53_32/include/QtNetwork/qsslkey.h \
+		../../5.7/mingw53_32/include/QtNetwork/qtnetworkversion.h \
+		../../5.7/mingw53_32/include/QtNetwork/QNetworkReply
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\querywindow.o querywindow.cpp
 
 debug/jschart.o: jschart.cpp jschart.h \
@@ -2777,7 +2914,40 @@ debug/jschart.o: jschart.cpp jschart.h \
 		../../5.7/mingw53_32/include/QtCore/QFlags \
 		../../5.7/mingw53_32/include/QtNetwork/QSslPreSharedKeyAuthenticator \
 		../../5.7/mingw53_32/include/QtNetwork/qsslpresharedkeyauthenticator.h \
-		../../5.7/mingw53_32/include/QtCore/QString
+		../../5.7/mingw53_32/include/QtCore/QString \
+		../../5.7/mingw53_32/include/QtNetwork/QtNetwork \
+		../../5.7/mingw53_32/include/QtNetwork/QtNetworkDepends \
+		../../5.7/mingw53_32/include/QtNetwork/qabstractnetworkcache.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkrequest.h \
+		../../5.7/mingw53_32/include/QtCore/QUrl \
+		../../5.7/mingw53_32/include/QtNetwork/qhttpmultipart.h \
+		../../5.7/mingw53_32/include/QtCore/QByteArray \
+		../../5.7/mingw53_32/include/QtCore/QIODevice \
+		../../5.7/mingw53_32/include/QtNetwork/QNetworkRequest \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkcookie.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkcookiejar.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkdiskcache.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkreply.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkconfigmanager.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkconfiguration.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworksession.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkinterface.h \
+		../../5.7/mingw53_32/include/QtNetwork/qhostaddress.h \
+		../../5.7/mingw53_32/include/QtNetwork/qauthenticator.h \
+		../../5.7/mingw53_32/include/QtNetwork/qdnslookup.h \
+		../../5.7/mingw53_32/include/QtNetwork/qhostinfo.h \
+		../../5.7/mingw53_32/include/QtNetwork/qnetworkproxy.h \
+		../../5.7/mingw53_32/include/QtNetwork/qlocalserver.h \
+		../../5.7/mingw53_32/include/QtNetwork/qlocalsocket.h \
+		../../5.7/mingw53_32/include/QtNetwork/qtcpserver.h \
+		../../5.7/mingw53_32/include/QtNetwork/qudpsocket.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslcertificateextension.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslcipher.h \
+		../../5.7/mingw53_32/include/QtNetwork/qsslellipticcurve.h \
+		../../5.7/mingw53_32/include/QtCore/QHash \
+		../../5.7/mingw53_32/include/QtNetwork/qsslkey.h \
+		../../5.7/mingw53_32/include/QtNetwork/qtnetworkversion.h \
+		../../5.7/mingw53_32/include/QtNetwork/QNetworkReply
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\jschart.o jschart.cpp
 
 debug/moc_mainwindow.o: debug/moc_mainwindow.cpp 
