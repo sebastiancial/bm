@@ -34,6 +34,8 @@ public:
     QLCDNumber *course_dig;
     QLabel *label;
     QLabel *label_2;
+    QPushButton *pushButton_4;
+    QPushButton *pushButton_5;
     QMenuBar *menuBar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -60,11 +62,13 @@ public:
         pushButton->setFlat(false);
         pushButton_2 = new QPushButton(centralWidget);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setGeometry(QRect(540, 390, 240, 75));
+        pushButton_2->setEnabled(false);
+        pushButton_2->setGeometry(QRect(530, 210, 240, 75));
         pushButton_2->setFont(font);
         pushButton_3 = new QPushButton(centralWidget);
         pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
-        pushButton_3->setGeometry(QRect(540, 480, 240, 75));
+        pushButton_3->setEnabled(false);
+        pushButton_3->setGeometry(QRect(530, 300, 240, 75));
         pushButton_3->setFont(font);
         bitocoincourse = new QLabel(centralWidget);
         bitocoincourse->setObjectName(QStringLiteral("bitocoincourse"));
@@ -87,6 +91,16 @@ public:
         label_2->setGeometry(QRect(120, 130, 351, 301));
         label_2->setPixmap(QPixmap(QString::fromUtf8("release/images/bitcoin-225079_1280.png")));
         label_2->setScaledContents(true);
+        pushButton_4 = new QPushButton(centralWidget);
+        pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
+        pushButton_4->setEnabled(false);
+        pushButton_4->setGeometry(QRect(530, 480, 240, 75));
+        pushButton_4->setFont(font);
+        pushButton_5 = new QPushButton(centralWidget);
+        pushButton_5->setObjectName(QStringLiteral("pushButton_5"));
+        pushButton_5->setEnabled(false);
+        pushButton_5->setGeometry(QRect(530, 390, 240, 75));
+        pushButton_5->setFont(font);
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -110,6 +124,8 @@ public:
         bitocoincourse->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:20pt;\">Current bitcoin course:</span></p></body></html>", Q_NULLPTR));
         label->setText(QApplication::translate("MainWindow", "$", Q_NULLPTR));
         label_2->setText(QString());
+        pushButton_4->setText(QApplication::translate("MainWindow", "Delete from database", Q_NULLPTR));
+        pushButton_5->setText(QApplication::translate("MainWindow", "Add to database", Q_NULLPTR));
     } // retranslateUi
 
 };

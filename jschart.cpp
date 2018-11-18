@@ -10,6 +10,7 @@ jschart::jschart(QWidget *parent) :
     setWindowFlags(windowFlags() | Qt::WindowMinimizeButtonHint);
 
     ui->setupUi(this);
+    this->setWindowTitle("Data Chart");
 
     int intdate;
     QDateTime datetm;

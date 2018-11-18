@@ -16,6 +16,8 @@
 
 //global variables
 extern QSqlQuery queryshare;
+//extern QSqlDatabase db;
+
 
 
 namespace Ui {
@@ -29,7 +31,7 @@ class MainWindow : public QMainWindow
 
 public:
     explicit MainWindow(QWidget *parent = 0);
-    QSqlDatabase db;
+
 
 
 
@@ -50,6 +52,7 @@ private slots:
     void urlFinished();
     void on_pushButton_3_clicked(); 
     void saveJson(QJsonDocument document, QString fileName);
+    void on_pushButton_4_clicked();
 
 
 signals:

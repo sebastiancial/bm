@@ -14,15 +14,21 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
         querywindow.cpp \
-        jschart.cpp
+        jschart.cpp \
+        addtodb.cpp \
+        deletefrdb.cpp
 
 HEADERS  += mainwindow.h \
             querywindow.h \
-            jschart.h
+            jschart.h \
+            addtodb.h \
+            deletefrdb.h
 
 FORMS    += mainwindow.ui \
             querywindow.ui \
-            jschart.ui
+            jschart.ui \
+            addtodb.ui \
+            deletefrdb.ui
 
 DISTFILES +=
 

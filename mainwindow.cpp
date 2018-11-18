@@ -2,9 +2,12 @@
 #include "ui_mainwindow.h"
 #include "querywindow.h"
 #include "jschart.h"
+#include "deletefrdb.h"
 
 //global variable
 QSqlQuery queryshare;
+
+
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -14,7 +17,6 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->setupUi(this);
     this->setWindowTitle("Bitcoin Manager");
-
     ui->label_2->setPixmap(QPixmap("./images/bitcoin-225079_1280.png"));
 
 
@@ -29,8 +31,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(reply, SIGNAL(readyRead()), this, SLOT(urlRead()));
     connect(reply, SIGNAL(finished()), this, SLOT(urlFinished()));
 
-    //using json file to display
-
+    //displaying data from json file
     QFile jsonFile("./json/json_btc.json");
     jsonFile.open(QFile::ReadOnly);
     QByteArray jsonall = jsonFile.readAll();
@@ -45,30 +46,32 @@ MainWindow::MainWindow(QWidget *parent) :
     QJsonObject nextlevel2 = val2.toObject();
     showvar(nextlevel2.value("rate_float"));
 
-
-
 }
-
-
 
 MainWindow::~MainWindow()
 {
 
+
+    {
+    QSqlDatabase db = QSqlDatabase::database();
+    db.close();
+    }
+    QSqlDatabase::removeDatabase("qt_sql_default_connection");
     delete ui;
 
 }
 
 void MainWindow::on_pushButton_clicked()
 {
-
-
+    QSqlDatabase db;
     db = QSqlDatabase::addDatabase("QMYSQL");
     db.setHostName("eu-cdbr-west-01.cleardb.com");
     db.setDatabaseName("heroku_02626224355284d");
     db.setUserName("b9c3c25375a034");
     db.setPassword("eefe98f3");
     bool ok = db.open();
-    db = QSqlDatabase();
+    //db = QSqlDatabase();
+
     QString oks;
     if (ok==1)
     {
@@ -81,8 +84,6 @@ void MainWindow::on_pushButton_clicked()
 
     qInfo()<<"The status of the database connection is "<< oks ;
 
-
-
     if (ok==1)
     {
         drawShapes = 1;
@@ -92,14 +93,8 @@ void MainWindow::on_pushButton_clicked()
     QSqlQuery query(db);
     query.exec("SELECT * FROM `btc` ;");
     queryshare = query;
-//    while (query.next()) {
-//    int timebm = query.value(1).toInt();
-//    qInfo("%d",timebm);
-//    }
     qInfo()<<"Database has "<<query.size()<<" rows and "<<query.record().count()<<"columns";
-
-    db.close();
-    db.removeDatabase(db.connectionName());
+    //db.close();
 }
 
 void MainWindow::paintEvent(QPaintEvent *)
@@ -113,10 +108,13 @@ void MainWindow::paintEvent(QPaintEvent *)
 
     if(drawShapes)
     {
-
     painter.fillRect(a, b, c, d, Qt::green);
     painter.drawRect(a, b, c, d);
 
+    ui->pushButton_2->setEnabled(true);
+    ui->pushButton_3->setEnabled(true);
+    ui->pushButton_4->setEnabled(true);
+    ui->pushButton_5->setEnabled(true);
     }
 }
 
@@ -138,6 +136,16 @@ void MainWindow::on_pushButton_3_clicked()
     chart->show();
 
 }
+
+void MainWindow::on_pushButton_4_clicked()
+{
+    deletefrdb *del;
+
+    del =new deletefrdb();
+    del->show();
+
+}
+
 
 void MainWindow::urlRead()
 {
