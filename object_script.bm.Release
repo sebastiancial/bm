@@ -3,10 +3,11 @@ INPUT(
 ./release\mainwindow.o
 ./release\querywindow.o
 ./release\jschart.o
-./release\addtodb.o
 ./release\deletefrdb.o
+./release\addtodb.o
 ./release\moc_mainwindow.o
 ./release\moc_querywindow.o
 ./release\moc_jschart.o
 ./release\moc_deletefrdb.o
+./release\moc_addtodb.o
 );

@@ -53,10 +53,12 @@ private slots:
     void on_pushButton_3_clicked(); 
     void saveJson(QJsonDocument document, QString fileName);
     void on_pushButton_4_clicked();
+    void on_pushButton_5_clicked();
 
 
 signals:
     void sig_var();
+
 
 private:
     bool drawShapes=0;
@@ -65,8 +67,6 @@ private:
     QJsonDocument jsondoc;
     //double bitvar;
     void showvar(QJsonValue val3);
-
-
 
 
     Ui::MainWindow *ui;

@@ -3,6 +3,8 @@
 #include "querywindow.h"
 #include "jschart.h"
 #include "deletefrdb.h"
+#include "addtodb.h"
+
 
 //global variable
 QSqlQuery queryshare;
@@ -146,6 +148,14 @@ void MainWindow::on_pushButton_4_clicked()
 
 }
 
+void MainWindow::on_pushButton_5_clicked()
+{
+    addtodb *addo;
+
+    addo =new addtodb();
+    addo->show();
+
+}
 
 void MainWindow::urlRead()
 {

@@ -3,10 +3,11 @@ INPUT(
 ./debug\mainwindow.o
 ./debug\querywindow.o
 ./debug\jschart.o
-./debug\addtodb.o
 ./debug\deletefrdb.o
+./debug\addtodb.o
 ./debug\moc_mainwindow.o
 ./debug\moc_querywindow.o
 ./debug\moc_jschart.o
 ./debug\moc_deletefrdb.o
+./debug\moc_addtodb.o
 );

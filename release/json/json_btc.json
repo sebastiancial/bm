@@ -3,30 +3,30 @@
         "EUR": {
             "code": "EUR",
             "description": "Euro",
-            "rate": "4,858.8971",
-            "rate_float": 4858.8971,
+            "rate": "3,408.4614",
+            "rate_float": 3408.4614,
             "symbol": "&euro;"
         },
         "GBP": {
             "code": "GBP",
             "description": "British Pound Sterling",
-            "rate": "4,321.2424",
-            "rate_float": 4321.2424,
+            "rate": "3,036.8431",
+            "rate_float": 3036.8431,
             "symbol": "&pound;"
         },
         "USD": {
             "code": "USD",
             "description": "United States Dollar",
-            "rate": "5,549.1250",
-            "rate_float": 5549.125,
+            "rate": "3,864.3417",
+            "rate_float": 3864.3417,
             "symbol": "&#36;"
         }
     },
     "chartName": "Bitcoin",
     "disclaimer": "This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org",
     "time": {
-        "updated": "Nov 18, 2018 01:20:00 UTC",
-        "updatedISO": "2018-11-18T01:20:00+00:00",
-        "updateduk": "Nov 18, 2018 at 01:20 GMT"
+        "updated": "Dec 5, 2018 10:34:00 UTC",
+        "updatedISO": "2018-12-05T10:34:00+00:00",
+        "updateduk": "Dec 5, 2018 at 10:34 GMT"
     }
 }

@@ -15,20 +15,20 @@ SOURCES += main.cpp\
         mainwindow.cpp \
         querywindow.cpp \
         jschart.cpp \
-        addtodb.cpp \
-        deletefrdb.cpp
+        deletefrdb.cpp \
+    addtodb.cpp
 
 HEADERS  += mainwindow.h \
             querywindow.h \
             jschart.h \
-            addtodb.h \
-            deletefrdb.h
+            deletefrdb.h \
+    addtodb.h
 
 FORMS    += mainwindow.ui \
             querywindow.ui \
             jschart.ui \
-            addtodb.ui \
-            deletefrdb.ui
+            deletefrdb.ui \
+    addtodb.ui
 
 DISTFILES +=
 

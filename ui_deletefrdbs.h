@@ -1,13 +1,13 @@
 /********************************************************************************
-** Form generated from reading UI file 'addtodb.ui'
+** Form generated from reading UI file 'deletefrdbs.ui'
 **
 ** Created by: Qt User Interface Compiler version 5.7.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef UI_ADDTODB_H
-#define UI_ADDTODB_H
+#ifndef UI_DELETEFRDBS_H
+#define UI_DELETEFRDBS_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QAction>
@@ -18,32 +18,32 @@
 
 QT_BEGIN_NAMESPACE
 
-class Ui_addtodb
+class Ui_deletefrdb
 {
 public:
 
-    void setupUi(QDialog *addtodb)
+    void setupUi(QDialog *deletefrdb)
     {
-        if (addtodb->objectName().isEmpty())
-            addtodb->setObjectName(QStringLiteral("addtodb"));
-        addtodb->resize(400, 300);
+        if (deletefrdb->objectName().isEmpty())
+            deletefrdb->setObjectName(QStringLiteral("deletefrdb"));
+        deletefrdb->resize(400, 300);
 
-        retranslateUi(addtodb);
+        retranslateUi(deletefrdb);
 
-        QMetaObject::connectSlotsByName(addtodb);
+        QMetaObject::connectSlotsByName(deletefrdb);
     } // setupUi
 
-    void retranslateUi(QDialog *addtodb)
+    void retranslateUi(QDialog *deletefrdb)
     {
-        addtodb->setWindowTitle(QApplication::translate("addtodb", "Dialog", Q_NULLPTR));
+        deletefrdb->setWindowTitle(QApplication::translate("deletefrdb", "Dialog", Q_NULLPTR));
     } // retranslateUi
 
 };
 
 namespace Ui {
-    class addtodb: public Ui_addtodb {};
+    class deletefrdb: public Ui_deletefrdb {};
 } // namespace Ui
 
 QT_END_NAMESPACE
 
-#endif // UI_ADDTODB_H
+#endif // UI_DELETEFRDBS_H
