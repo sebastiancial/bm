@@ -16,6 +16,14 @@ jschart::jschart(QWidget *parent) :
     QDateTime datetm;
     QLineSeries *series = new QLineSeries;
 
+    /*
+    //refresh database
+    QSqlDatabase db;
+    QSqlQuery query(db);
+    query.exec("SELECT * FROM `btc` ;");
+    queryshare = query;
+    */
+
     queryshare.first();
     for(int m=0;m<queryshare.size();m++)
     {

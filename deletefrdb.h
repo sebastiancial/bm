@@ -20,6 +20,11 @@ public:
 
     ~deletefrdb();
 
+
+private slots:
+
+        void on_pushButton_clicked();
+
 private:
 
     Ui::deletefrdb *ui;

@@ -20,6 +20,10 @@ public:
 
     ~addtodb();
 
+private slots:
+
+        void on_pushButton_clicked();
+
 private:
 
     Ui::addtodb *ui;

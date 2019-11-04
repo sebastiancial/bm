@@ -14,6 +14,13 @@ querywindow::querywindow(QWidget *parent) :
     ui->setupUi(this);// Ja nie mogę... wszystko trzeba po tym deklarować...
     this->setWindowTitle("Data Table");
 
+    //refresh database
+    QSqlDatabase db;
+    QSqlQuery query(db);
+    query.exec("SELECT * FROM `btc` ;");
+    queryshare = query;
+
+
 
     //edycja wyglądu okna
     ui->tableWidget->verticalHeader()->setVisible(false);
